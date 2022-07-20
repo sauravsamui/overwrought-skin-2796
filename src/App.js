@@ -10,8 +10,8 @@ import AfterLoginBody from "./Pages/AfterLoginMainPage/AfterLoginBody";
 function App() {
   return (
     <div className="App">
-      {/* <AfterLoginBody /> */}
       <AfterLoginMainPageNavbar />
+      <AfterLoginBody />
       {/* <Navbar/>
       <Routes>
       <Route path='/' element={<Home/>}/>
