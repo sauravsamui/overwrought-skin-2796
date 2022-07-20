@@ -10,14 +10,20 @@ import AfterLoginBody from "./Pages/AfterLoginMainPage/AfterLoginBody";
 function App() {
   return (
     <div className="App">
+      {/* <<<<<<< HEAD */}
+      <AfterLoginMainPageNavbar />
+      <AfterLoginBody />
+      {/* <Navbar/>
+=======
       {/* <AfterLoginBody /> */}
       {/* <AfterLoginMainPageNavbar /> */}
-      <Navbar/>
-      <Routes>
+      <Navbar />
+      {/* >>>>>>> main */}
+      {/* <Routes>
       <Route path='/' element={<Home/>}/>
       <Route path='/question' element={<Question/>}/>
       <Route path='/weight' element={<Weight/>}/> 
-      </Routes>
+      </Routes> */}
     </div>
   );
 }
