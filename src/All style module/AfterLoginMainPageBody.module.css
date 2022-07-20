@@ -5,9 +5,14 @@
     /* border:1px solid black; */
     margin-top: 4%;
 }
+.leftBody{
+    width:55%;
+}
 .LeftBody_SelectSetion{
     display: flex;
     gap: 25px;
+    border:1px solid black;
+    width:fit-content;
 }
 .LeftBody_SelectSetion > div{
   display: flex;
@@ -57,3 +62,16 @@ margin-bottom:0;
 
 
 
+.leftBodyDataDetails >div{
+    width: 100%;
+display: flex;
+    text-align: center;
+    color: rgb(116, 116, 116);
+    justify-content: space-around;
+}
+        .leftBodyDataDetails :nth-child(2)>h6{
+            color:black;
+
+            align-items: center;
+            margin-right: 20px;
+        }

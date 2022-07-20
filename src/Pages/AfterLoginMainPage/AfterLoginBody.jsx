@@ -52,7 +52,22 @@ const AfterLoginBody = () => {
 
         {/* left body section start */}
 
-        <div></div>
+        <div className={style.leftBodyDataDetails}>
+          <div>
+            <h6>Budget</h6>
+            <h6>Food</h6>
+            <h6>Exercise</h6>
+            <h6>Net</h6>
+            <h6>Under</h6>
+          </div>
+          <div>
+            <h6>1600</h6>
+            <h6>-</h6>
+            <h6>-</h6>
+            <h6>-</h6>
+            <h6>-</h6>
+          </div>
+        </div>
       </div>
       <div className={style.RightBody}></div>
     </div>
