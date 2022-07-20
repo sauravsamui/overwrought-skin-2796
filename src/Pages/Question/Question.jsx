@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-import styles from "./Question.module.css"
+import styles from "../../All style module/Question.module.css";
 const Question = () => {
   return (
     <div>
