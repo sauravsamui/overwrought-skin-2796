@@ -5,10 +5,12 @@ import "./App.css";
 // import Home from "./Pages/Question/Home";
 // import Weight from "./Pages/Weight/Weight";
 import AfterLoginMainPageNavbar from "./component/Navbar/AfterLoginMainPageNavbar";
+import AfterLoginBody from "./Pages/AfterLoginMainPage/AfterLoginBody";
 
 function App() {
   return (
     <div className="App">
+      {/* <AfterLoginBody /> */}
       <AfterLoginMainPageNavbar />
       {/* <Navbar/>
       <Routes>
