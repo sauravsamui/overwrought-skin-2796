@@ -20,7 +20,7 @@
     /* word-wrap: none; */
     /* overflow: hidden; */
 
-   
+   /* margin-left: 230px; */
 }
 .navbar_left a> img{
     width: 16px;
@@ -37,9 +37,11 @@
 
 .navbar_right{
     display: flex;
+   
 
 }
 .navbar_right_links{
+/* margin-right: 230px; */
     gap:12px !important;
 }
 .navbar_right_links >img{
