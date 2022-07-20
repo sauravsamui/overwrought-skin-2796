@@ -2,6 +2,8 @@ import React, { useEffect, useRef } from 'react'
 import { useState } from 'react';
 import { Link,useNavigate } from 'react-router-dom'
 import styles from "../../All style module/Weight.module.css";
+
+
 const Weight = () => {
     const currentWref=  useRef(null)
     const [unitSelect,setUnitSelect] = useState("lb")
@@ -30,6 +32,12 @@ let handleContinue=()=>{
      currentWref.current.focus();
      return;
   }
+  let weightU={
+    curWeight:currentWref.current,
+    goalWeight:goalWref.current,
+    unit:unitSelect
+  }
+  localStorage.setItem("weightU",JSON.stringify(weightU));
   navigate("/")
   c = null;
   g = null;
