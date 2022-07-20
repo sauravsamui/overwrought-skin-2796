@@ -1,17 +1,47 @@
 import React, { useEffect, useRef } from 'react'
-import { Link } from 'react-router-dom'
-import styles from "./Weight.module.css"
-const Weight = () => {
-    const ref=  useRef(null)
+import { useState } from 'react';
+import { Link,useNavigate } from 'react-router-dom'
+import styles from "../../All style module/Weight.module.css";
 
+
+const Weight = () => {
+    const currentWref=  useRef(null)
+    const [unitSelect,setUnitSelect] = useState("lb")
+    const goalWref=  useRef(null)
+    const [show1,setShow1] = useState(false)
+    const [show2,setShow2] = useState(false)
+    const navigate = useNavigate()
 useEffect(() => {
   
-ref.current.focus()
+currentWref.current.focus()
   return () => {
     
   }
 }, [])
 
+let handleContinue=()=>{
+  let c =currentWref.current.value;
+  let g =goalWref.current.value;
+  if(!c || c<25 || c >200){
+     setShow1(true);
+     currentWref.current.focus();
+     return;
+  }
+  if(!g || g<25 || g>200){
+    setShow2(true);
+     currentWref.current.focus();
+     return;
+  }
+  let weightU={
+    curWeight:currentWref.current,
+    goalWeight:goalWref.current,
+    unit:unitSelect
+  }
+  localStorage.setItem("weightU",JSON.stringify(weightU));
+  navigate("/")
+  c = null;
+  g = null;
+}
 
 
   return (
@@ -25,19 +55,31 @@ ref.current.focus()
       <div className={styles.arrow}><Link  to={"/question"}><button>{"<"}</button></Link></div>
       <div >
         <h1 className={styles.currentW} >Current Weight</h1>
-        <input className={styles.inputW1} type={"number"} ref={ref} />
-        <select className={styles.selectW} >
-            <option value={"lb"}>lb</option>
-            <option value={"kg"}>kg</option>
-        </select>
-        <h1 className={styles.goalW}>Goal Weight</h1>
-        <input className={styles.inputW} type={"number"}  />
-        <select className={styles.selectW}>
+        <input  className={styles.inputW1} type={"number"} ref={currentWref} onChange={(e)=>{
+          if(e.target.value){
+            setShow1(false)
+          }
+        }} />
+        <select className={styles.selectW}  value={unitSelect} onChange={(e)=>setUnitSelect(e.target.value)}>
             <option value={"lb"}>lb</option>
             <option value={"kg"}>kg</option>
         </select>
         <br />
-        <Link to={"/weight"}><button className={styles.btnYes}>Continue</button></Link>
+        <p style={{color:"red"}}>{show1?"This is an unsupported weight.":""}</p>
+        <h1 className={styles.goalW}>Goal Weight</h1>
+        <input  className={styles.inputW} type={"number"} ref={goalWref} onChange={(e)=>{
+          if(e.target.value){
+            setShow2(false)
+          }
+        }} />
+        <select className={styles.selectW} value={unitSelect} onChange={(e)=>setUnitSelect(e.target.value)}>
+            <option value={"lb"}>lb</option>
+            <option value={"kg"}>kg</option>
+        </select>
+        <br />
+        <p style={{color:"red"}}>{show2?"This is an unsupported weight.":""}</p>
+        <br />
+        <button className={styles.btnYes} onClick={handleContinue}>Continue</button>
         <p className={styles.details}>To create your personalized weight loss plan, Lose It! uses BMR (Basal Metabolic Rate) to calculate
              your calorie budget, which requires weight,
              height, biological sex and age as inputs.</p>
