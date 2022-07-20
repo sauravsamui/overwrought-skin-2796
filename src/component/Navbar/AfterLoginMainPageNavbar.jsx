@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "../../All style module/AfterLoginMainPageNavbar.module.css";
 import { Link } from "react-router-dom";
-import { IoMdSettings } from "react-icons/io";
+// import { IoMdSettings } from "react-icons/io";
 // AiOutlineSetting;
 const AfterLoginMainPageNavbar = () => {
   return (
@@ -24,7 +24,7 @@ const AfterLoginMainPageNavbar = () => {
         <Link to="">Apps s Devices</Link>
         <Link to="">Messages</Link>
         <Link to="">
-          <IoMdSettings />
+          {/* <IoMdSettings /> */}
         </Link>
       </div>
 
