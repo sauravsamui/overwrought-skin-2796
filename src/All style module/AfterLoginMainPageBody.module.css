@@ -127,7 +127,7 @@
 
 .left__container__food__box {
   width: 99.7%;
-  min-height: 70px;
+  /* min-height: 70px; */
   margin: auto;
   background-color: white;
   padding: 10px;
@@ -174,7 +174,7 @@
   width: 500px;
   border: 1px solid black;
   position: absolute;
-  top: 55%;
+  top: 230px;
   left: 460px;
 }
 .breakfastDataMap {

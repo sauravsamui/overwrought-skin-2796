@@ -12,7 +12,8 @@ const AfterLoginBody = () => {
   const [showDropdown, setShowDropdown] = useState(false);
   const [SearchData, SetSearchData] = useState([]);
 
-  const [SearchDropdown, setSearchDropdown] = useState(false);
+  const [SearchDropdownBreak, setSearchDropdownBreak] = useState(false);
+  const [SearchDropdownlunch, setSearchDropdownlunch] = useState(false);
   const [breakFast, setbreakfast] = useState([]);
   const [lunchh, setlunch] = useState([]);
   const [dinnerr, setdinner] = useState([]);
@@ -27,32 +28,54 @@ const AfterLoginBody = () => {
       axios.get(`http://localhost:8080/${b}`).then((response) => {
         console.log("response:", response);
         SetSearchData(response.data);
-        setSearchDropdown(true);
+        setSearchDropdownBreak(true);
         // console.log("response:", response.data);
       });
     } else {
       SetSearchData([]);
-      setSearchDropdown(false);
+      setSearchDropdownBreak(false);
+    }
+  };
+  const hanldeSearch1 = (b, e) => {
+    if (e.target.value) {
+      axios.get(`http://localhost:8080/${b}`).then((response) => {
+        console.log("response:", response);
+        SetSearchData(response.data);
+        setSearchDropdownlunch(true);
+
+        // setSearchDropdown(true);
+        // console.log("response:", response.data);
+      });
+    } else {
+      SetSearchData([]);
+      setSearchDropdownlunch(false);
     }
   };
 
-  const hanldeAddFood = (el, index) => {
-    // console.log("hey");
+  const hanldeAddFood = (el, index, food) => {
     let payload = { data: el.name, img: el.img };
 
     axios
-      .post(`http://localhost:8080/breakfast_data`, {
+      .post(`http://localhost:8080/${food}`, {
         ...payload,
       })
       .then((res) => {
-        getAddedData();
+        if (food === "lunch_data") {
+          getAddedData1();
+        } else {
+          getAddedData();
+        }
       });
-    setSearchDropdown(false);
+    setSearchDropdownBreak(false);
+    setSearchDropdownlunch(false);
   };
-
+  const getAddedData1 = () => {
+    axios.get(`http://localhost:8080/lunch_data`).then((res) => {
+      setlunch(res.data);
+    });
+  };
   const getAddedData = () => {
     axios.get(`http://localhost:8080/breakfast_data`).then((res) => {
-      // console.log("res:", res);
       setbreakfast(res.data);
     });
   };
@@ -65,16 +88,20 @@ const AfterLoginBody = () => {
   };
 
   const handleDeleteFood = (when, id) => {
-    // console.log("id:", id);
-    // console.log("when:", when);
-    // console.log("delete");
+    console.log("when:", when);
     axios.delete(`http://localhost:8080/${when}/${id}`).then((res) => {
-      getAddedData();
+      if (when === "lunch_data") {
+        getAddedData1();
+      } else {
+        getAddedData();
+      }
+
       console.log("res:", res.data.id);
     });
   };
   useEffect(() => {
     getAddedData();
+    getAddedData1();
   }, []);
   return (
     <div className={style.MainBody}>
@@ -153,9 +180,9 @@ const AfterLoginBody = () => {
             <h6>-</h6>
           </div>
           <div className={style.line}></div>
-
+          {/* breakfast started ...................*/}
           <div className={style.left__container__mealType}>
-            <h5 id={style.breakfast_count}>Breakfast: 0</h5>
+            <h5 id={style.breakfast_count}>Breakfast: {breakFast.length}</h5>
             <input
               type="text"
               placeholder=" Search & add food"
@@ -165,14 +192,16 @@ const AfterLoginBody = () => {
             />
           </div>
           <div
-            style={{ display: SearchDropdown ? "block" : "none" }}
+            style={{ display: SearchDropdownBreak ? "block" : "none" }}
             className={style.SearchDrop}
           >
             {SearchData.map((el, index) => {
               return (
                 <FoodSearchPage
                   key={index}
-                  hanldeAddFood={{ hanldeAddFood, el }}
+                  hanldeAddFood={hanldeAddFood}
+                  el={el}
+                  food={"breakfast_data"}
                 />
               );
             })}
@@ -194,7 +223,6 @@ const AfterLoginBody = () => {
                       className={style.breakFastmapDataDelete}
                       style={{ color: "green" }}
                       onClick={() => handleDeleteFood("breakfast_data", el.id)}
-                      // onClick={handleDeleteFood}
                     >
                       x
                     </div>
@@ -202,14 +230,116 @@ const AfterLoginBody = () => {
                 );
               })}
             </div>
-            {!breakFast ? (
+            {breakFast.length === 0 ? (
               <p id={style.breakfast_para}>No food logged for breakfast</p>
             ) : (
               ""
             )}
+            {/* //////////////////////breakfastdone */}
+            <div className={style.line}></div>
+
+            <div className={style.left__container__mealType}>
+              <h5 id={style.breakfast_count}>lunch: {lunchh.length}</h5>
+              <input
+                type="text"
+                placeholder=" Search & add food"
+                className={style.search__food}
+                id={style.enter_breakfast}
+                onChange={(e) => hanldeSearch1("lunch", e)}
+              />
+            </div>
+            <div
+              style={{ display: SearchDropdownlunch ? "block" : "none" }}
+              className={style.SearchDrop}
+            >
+              {SearchData.map((el, index) => {
+                return (
+                  <FoodSearchPage
+                    key={index}
+                    hanldeAddFood={hanldeAddFood}
+                    el={el}
+                    food={"lunch_data"}
+                  />
+                );
+              })}
+            </div>
+            <div
+              className={style.left__container__food__box}
+              id={style.breakfast_box}
+            >
+              <div id={style.breakfast_table}>
+                {lunchh.map((el, index) => {
+                  return (
+                    <div className={style.breakfastDataMap}>
+                      <div className={style.breakfastDataInsideDiv}>
+                        <img src={el.img} alt="a" />
+                        {el.data}
+                      </div>
+
+                      <div
+                        className={style.breakFastmapDataDelete}
+                        style={{ color: "green" }}
+                        onClick={() => handleDeleteFood("lunch_data", el.id)}
+                      >
+                        x
+                      </div>
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
+            {lunchh.length === 0 ? (
+              <p id={style.breakfast_para}>No food logged for breakfast</p>
+            ) : (
+              ""
+            )}
+
+            {/* Snakesstart........................................ */}
+            <div className={style.line}></div>
+            <div className={style.left__container__mealType}>
+              <h5 id={style.breakfast_count}>Snakes: 0</h5>
+              <input
+                type="text"
+                placeholder=" Search & add food"
+                className={style.search__food}
+                id={style.enter_breakfast}
+              />
+            </div>
+            <div
+              className={style.left__container__food__box}
+              id={style.breakfast_box}
+            >
+              <table
+                id={style.breakfast_table}
+                style={{ display: "none" }}
+              ></table>
+              <p id={style.breakfast_para}>No food logged for breakfast</p>
+            </div>
+            {/* Exercise started....................... */}
+            <div className={style.line}></div>
+            <div className={style.left__container__mealType}>
+              <h5 id={style.breakfast_count}>Exercise: 0</h5>
+              <input
+                type="text"
+                placeholder=" Search & add food"
+                className={style.search__food}
+                id={style.enter_breakfast}
+              />
+            </div>
+            <div
+              className={style.left__container__food__box}
+              id={style.breakfast_box}
+            >
+              <table
+                id={style.breakfast_table}
+                style={{ display: "none" }}
+              ></table>
+              <p id={style.breakfast_para}>No food logged for breakfast</p>
+            </div>
           </div>
         </div>
       </div>
+
       <div className={style.RightBody}></div>
     </div>
   );

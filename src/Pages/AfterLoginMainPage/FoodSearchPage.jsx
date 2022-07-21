@@ -2,14 +2,17 @@ import React from "react";
 import style from "../../All style module/AfterLoginMainPageBody.module.css";
 
 const FoodSearchPage = (props) => {
-  const hanldeAddFood = props.hanldeAddFood.hanldeAddFood;
-  //   console.log("hanldeAddFood:", hanldeAddFood);
-  const el = props.hanldeAddFood.el;
+  console.log("props:", props);
+
+  const hanldeAddFood = props.hanldeAddFood;
+  const food = props.food;
+
+  const el = props.el;
 
   return (
     <div
       className={style.searchDataList}
-      onClick={() => hanldeAddFood(el, el.id)}
+      onClick={() => hanldeAddFood(el, el.id, food)}
     >
       <img src={el.img} alt="img" />
       <p>{el.name}</p>
