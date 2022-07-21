@@ -7,6 +7,7 @@ import Weight from "./Pages/Weight/Weight";
 import Height from "./Pages/Height/Height";
 import Gender from "./Pages/Gender/Gender";
 import Birthday from "./Pages/Birthday/Birthday";
+import Plan from "./Pages/Plan/Plan";
 import LandingPage from './Pages/LandingPage/Landingpage';
 import AfterLoginMainPageNavbar from "./component/Navbar/AfterLoginMainPageNavbar";
 import AfterLoginBody from "./Pages/AfterLoginMainPage/AfterLoginBody";
@@ -26,6 +27,7 @@ function App() {
         <Route path='/height' element={<Height/>}/>
         <Route path='/gender' element={<Gender/>}/>
         <Route path='/birthday' element={<Birthday/>}/>
+        <Route path='/plan' element={<Plan/>}/>
 
       </Routes> 
 
