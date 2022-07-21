@@ -21,7 +21,11 @@ currentWref.current.focus()
 
 let handleContinue=()=>{
   let c =currentWref.current.value;
-  let g =goalWref.current.value;
+
+    let g =goalWref.current.value;
+  
+  
+
   if(!c || c<25 || c >200){
      setShow1(true);
      currentWref.current.focus();
@@ -32,15 +36,14 @@ let handleContinue=()=>{
      currentWref.current.focus();
      return;
   }
-  let weightU={
-    curWeight:currentWref.current,
-    goalWeight:goalWref.current,
+  let weightH={
+    curWeight:c,
+    goalWeight:g,
     unit:unitSelect
   }
-  localStorage.setItem("weightU",JSON.stringify(weightU));
+  localStorage.setItem("weightU",JSON.stringify(weightH));
   navigate("/height")
-  c = null;
-  g = null;
+ 
 }
 
 
