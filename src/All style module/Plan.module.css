@@ -1,0 +1,98 @@
+.headerDiv{
+    /* border: 1px solid red; */
+    width: 250px;
+}
+
+.headerImg{
+    width: 250px;
+    cursor: pointer;
+    
+}
+.middleInsideDiv{
+    background-color: whitesmoke;
+    width: 480px;
+    margin: auto;
+    padding: 8px 10px;
+    margin-top: 30px;
+    border-radius: 10px;
+
+}
+
+.arrow{
+    text-align: left;
+    font-weight: 1000;
+    font-size: larger;
+}
+.currentW{
+    color: #173966;
+    font-size: 25px;
+    letter-spacing: 1px;
+    font-weight: bolder; 
+    margin-top: 10px;
+    width: 80%;
+    margin: auto;
+}
+.btnYes{
+   
+    color:white;
+    background-color: #ff9400;
+    cursor: pointer;
+    width: 200px;
+    height: 42px;
+    border-radius: 5px;
+    font-size: larger;
+    border: none;
+    font-weight: bolder;
+    text-align: center;
+    margin-top: -25px;
+  
+}
+.btnYes1{
+    color:white;
+    background-color: #ff9400;
+    cursor: pointer;
+    width: 200px;
+    height: 42px;
+    border-radius: 5px;
+    font-size: larger;
+    border: none;
+    display: inline-block;
+    font-weight: bolder;
+    text-align: center;
+    margin-top: 30px;
+}
+.details{
+   
+    font-size: 12px;
+    width: 75%;
+    margin: auto;
+    margin-top: 80px;
+    text-align: center;
+    font-weight: 500;
+    padding-bottom: 5px;
+    
+}
+.watermelonImg{
+    width: 45px;
+    height: 40px;
+}
+.watermelonDiv{
+    display: flex;
+    margin: auto;
+    width: 45%;
+    margin-top: 50px;
+    justify-content: space-between;
+}
+.watermelonInsideDiv{
+    text-align: left;
+}
+.calenderDiv{
+    display: flex;
+    margin: auto;
+    width: 45%;
+    margin-top: 20px;
+}
+.calenderInsideDiv{
+    text-align: left;
+    margin-left: 15px;
+}
