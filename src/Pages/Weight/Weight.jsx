@@ -38,7 +38,7 @@ let handleContinue=()=>{
     unit:unitSelect
   }
   localStorage.setItem("weightU",JSON.stringify(weightU));
-  navigate("/")
+  navigate("/height")
   c = null;
   g = null;
 }

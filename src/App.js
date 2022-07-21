@@ -6,6 +6,7 @@ import Navbar from "./component/Navbar/Navbar";
 import Question from "./Pages/Question/Question";
 import Home from "./Pages/Question/Home";
 import Weight from "./Pages/Weight/Weight";
+import Height from "./Pages/Height/Height";
 import LandingPage from './Pages/LandingPage/Landingpage';
 import AfterLoginMainPageNavbar from "./component/Navbar/AfterLoginMainPageNavbar";
 import AfterLoginBody from "./Pages/AfterLoginMainPage/AfterLoginBody";
@@ -19,6 +20,7 @@ function App() {
         {/* <Route path='/' element={<Home/>}/> */}
         <Route path='/question' element={<Question/>}/>
         <Route path='/weight' element={<Weight/>}/>
+        <Route path='/height' element={<Height/>}/>
 
       </Routes>
 
@@ -28,13 +30,8 @@ function App() {
       
       {/* <AfterLoginBody /> */}
       {/* <AfterLoginMainPageNavbar /> */}
-      <Navbar />
-      {/* >>>>>>> main */}
-      {/* <Routes>
-      <Route path='/' element={<Home/>}/>
-      <Route path='/question' element={<Question/>}/>
-      <Route path='/weight' element={<Weight/>}/> 
-      </Routes> */}
+      {/* <Navbar /> */}
+   
     </div>
   );
 }
