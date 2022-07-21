@@ -1,14 +1,14 @@
 import { MenuButton } from "@chakra-ui/react";
 import React from "react";
-import "./header.css";
+import style from  "./header.module.css";
 
 export default function Header() {
   return (
-    <div className="landingHeader">
-      <div className="job-banner" style={{ fontSize: "0.9em" }}>
+    <div className={style.landingHeader}>
+      <div className={style.jobBanner}>
         <a href="/jobs/">
           <p
-            className="job-text"
+            
             style={{
               fontWeight: "bold",
               textAlign: "center",
@@ -19,12 +19,12 @@ export default function Header() {
           </p>
         </a>
       </div>
-      <div className="header-one">
+      <div className={style.headerOne}>
         <div
-          className="flex-1"
+          
           style={{ display: "flex", justifyContent: "space-between" }}
         >
-          <div className="img-flex" style={{ marginLeft: "-6%" }}>
+          <div style={{ marginLeft: "-6%" }}>
             <a href="/">
               <img
                 src="https://assets.loseit.com/website/corporate/LoseIt_Logo_FullColor+(1).svg"
@@ -33,31 +33,31 @@ export default function Header() {
               ></img>
             </a>
           </div>
-          <div className="login-div" style={{ marginTop: "2%" }}>
+          <div  style={{ marginTop: "2%" }}>
             <button
-              className="loginbutton"
-              style={{ color: "white", backgroundColor: "orange" }}
+              className={style.loginButton}
+              
             >
               Login
             </button>
           </div>
         </div>
       </div>
-      <div className="header-two">
-        <div className="hd-flex">
-          <div className="h2-1">
+      <div className={style.headerTwo}>
+        <div className={style.hdFlex}>
+          <div className={style.h2One}>
             <img
               src="	https://assets.loseit.com/website/home/Screenshot_LogScreenFixed.png"
               alt="phone"
             ></img>
           </div>
-          <div className="h2-2">
+          <div className={style.h2Two}>
             <h1>Top Rated</h1>
             <h1>Weight Loss Plan</h1>
             <p>Track the foods you love and lose weight</p>
             <button>Sign Up for Free</button>
             <div className="h2-2-flex" style={{ display: "flex" }}>
-              <div className="apple" >
+              <div className={style.apple} >
               <i class="fab fa-apple"></i>
                 <span class="fa fa-star checked"></span>
                 <span class="fa fa-star checked"></span>
@@ -65,7 +65,7 @@ export default function Header() {
                 <span class="fa fa-star checked"></span>
                 <span class="fa fa-star"></span>
               </div>
-              <div className="android">
+              <div className={style.android}>
               <a href="/get/android" aria-label="Download Lose It! app from Play Store">
                         <i class="fab fa-android"></i>
                         <i class="checked fa fa-star"></i>
