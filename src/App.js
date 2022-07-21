@@ -1,5 +1,3 @@
-
-
 import "./App.css";
 import { Routes, Route } from "react-router-dom";
 import Navbar from "./component/Navbar/Navbar";
@@ -16,26 +14,23 @@ import AfterLoginBody from "./Pages/AfterLoginMainPage/AfterLoginBody";
 function App() {
   return (
     <div className="App">
+
       <Navbar/>
       <Routes>
         <Route path='/' element={<LandingPage/>}/>
         {/* <Route path='/' element={<Home/>}/> */}
         <Route path='/question' element={<Question/>}/>
+      <AfterLoginMainPageNavbar />
+      <AfterLoginBody />
         <Route path='/weight' element={<Weight/>}/>
         <Route path='/height' element={<Height/>}/>
         <Route path='/gender' element={<Gender/>}/>
         <Route path='/birthday' element={<Birthday/>}/>
 
-      </Routes>
+      </Routes> 
 
-      {/* <AfterLoginMainPageNavbar /> */}
-      {/* <AfterLoginBody /> */}
-      {/* <Navbar/>
-      
-      {/* <AfterLoginBody /> */}
-      {/* <AfterLoginMainPageNavbar /> */}
-      {/* <Navbar /> */}
-   
+    
+
     </div>
   );
 }
