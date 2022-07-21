@@ -1,0 +1,70 @@
+{
+  "breakfast": [
+    {
+      "id": 1,
+      "name": "Poha",
+      "img": "https://d3hsih69yn4d89.cloudfront.net/web/D0D60B218ED1672F9235023F30C86D20.cache.png",
+      "calories": 74,
+      "protein": 2.5
+    },
+    {
+      "id": 2,
+      "name": "Oats",
+      "img": "https://d3hsih69yn4d89.cloudfront.net/web/626A75DEEB2C1D9D82A0A8EF5BD99120.cache.png",
+      "calories": 170,
+      "protein": 6
+    },
+    {
+      "id": 3,
+      "name": "Idly",
+      "img": "https://d3hsih69yn4d89.cloudfront.net/web/72FD1E613FB8593767A7CC272600E5EE.cache.png",
+      " calories": 108,
+      "protein": 1.9
+    },
+    {
+      "id": 4,
+      "name": "Dosa",
+      "img": "https://d3hsih69yn4d89.cloudfront.net/web/59BB5546943F9723FB50DBAE4226D37A.cache.png",
+      "calories": 300,
+      "protein": 3
+    }
+  ],
+  "breakfast_data": [],
+  "lunch_data": [
+    {
+      "data": "chicken",
+      "img": "https://d3hsih69yn4d89.cloudfront.net/web/626A75DEEB2C1D9D82A0A8EF5BD99120.cache.png",
+      "id": 1
+    }
+  ],
+  "lunch": [
+    {
+      "id": 0,
+      "name": "rice",
+      "img": "https://d3hsih69yn4d89.cloudfront.net/web/D0D60B218ED1672F9235023F30C86D20.cache.png",
+      "calories": 74,
+      "protein": 2.5
+    },
+    {
+      "id": 1,
+      "name": "chicken",
+      "img": "https://d3hsih69yn4d89.cloudfront.net/web/626A75DEEB2C1D9D82A0A8EF5BD99120.cache.png",
+      "calories": 170,
+      "protein": 6
+    },
+    {
+      "id": 2,
+      "name": "paneer",
+      "img": "https://d3hsih69yn4d89.cloudfront.net/web/72FD1E613FB8593767A7CC272600E5EE.cache.png",
+      " calories": 108,
+      "protein": 1.9
+    },
+    {
+      "id": 3,
+      "name": "dal",
+      "img": "https://d3hsih69yn4d89.cloudfront.net/web/59BB5546943F9723FB50DBAE4226D37A.cache.png",
+      "calories": 300,
+      "protein": 3
+    }
+  ]
+}
