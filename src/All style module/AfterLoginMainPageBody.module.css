@@ -1,145 +1,194 @@
 .MainBody {
-    display: flex;
-    width: 80%;
-    margin: auto;
-    /* border:1px solid black; */
-    margin-top: 4%;
+  display: flex;
+  width: 80%;
+  margin: auto;
+  /* border:1px solid black; */
+  margin-top: 4%;
 }
 
 .leftBody {
-    width: 55%;
+  width: 55%;
 }
 
 .LeftBody_SelectSetion {
-    display: flex;
-    gap: 25px;
-    /* border: 1px solid black; */
-    width: fit-content;
-    margin-bottom: 2%;
+  display: flex;
+  gap: 25px;
+  /* border: 1px solid black; */
+  width: fit-content;
+  margin-bottom: 2%;
 }
 
-.LeftBody_SelectSetion>div {
-    display: flex;
-    cursor: pointer;
-    gap: 6%;
+.LeftBody_SelectSetion > div {
+  display: flex;
+  cursor: pointer;
+  gap: 6%;
 }
 
-.LeftBody_SelectSetion>div>img {
-    height: 30px;
-    width: 121px;
+.LeftBody_SelectSetion > div > img {
+  height: 30px;
+  width: 121px;
 }
 
 .dropdown_button {
-    font-size: 12px;
-    margin-bottom: 8px;
-    display: flex;
-    column-gap: 8px;
-    align-items: center;
-    padding: 5px;
-    border-radius: 2px;
-    margin-bottom: 0;
+  font-size: 12px;
+  margin-bottom: 8px;
+  display: flex;
+  column-gap: 8px;
+  align-items: center;
+  padding: 5px;
+  border-radius: 2px;
+  margin-bottom: 0;
 }
 
 .dropdown__food {
-    position: absolute;
-    top: 30px;
-    background-color: #f9f9f9;
-    /* min-width: 120px; */
-    width: 111px;
-    box-shadow: 0px 8px 16px 0px rgba(26, 25, 25, 0.2);
-    padding: 5px 5px;
-    z-index: 1;
-    cursor: pointer;
-    border-radius: 5px;
+  position: absolute;
+  top: 30px;
+  background-color: #f9f9f9;
+  /* min-width: 120px; */
+  width: 111px;
+  box-shadow: 0px 8px 16px 0px rgba(26, 25, 25, 0.2);
+  padding: 5px 5px;
+  z-index: 1;
+  cursor: pointer;
+  border-radius: 5px;
 }
 
-.dropdown__food>div:hover {
-    background: linear-gradient(to right,
-            #114d82,
-            #2971b1,
-            #1a76c0,
-            #1a76c0,
-            #2971b1,
-            #114d82);
-    color: white;
+.dropdown__food > div:hover {
+  background: linear-gradient(
+    to right,
+    #114d82,
+    #2971b1,
+    #1a76c0,
+    #1a76c0,
+    #2971b1,
+    #114d82
+  );
+  color: white;
 }
 
 /* /////////////////////////drop end */
 
-
 .leftBodyDataDetails {
-    width: 100%;
-    /* border:1px solid black;   */
-    background-color: #EDF0F3;
-    width: 100%;
-    height: fit-content;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    /* color: red;
+  width: 100%;
+  /* border:1px solid black;   */
+  background-color: #edf0f3;
+  width: 100%;
+  height: fit-content;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  /* color: red;
             border: 1px solid green; */
-    /* border: 1px solid grey; */
-    /* border-radius: 7px; */
+  /* border: 1px solid grey; */
+  /* border-radius: 7px; */
 }
 
 .leftBodyDataDetails_header {
-    display: flex;
-    text-align: center;
-    color: rgb(116, 116, 116);
-    justify-content: space-around;
-
+  display: flex;
+  text-align: center;
+  color: rgb(116, 116, 116);
+  justify-content: space-around;
 }
 
 .leftBodyDataDetails_header_value {
-    display: flex;
-    color: black;
-    justify-content: space-around;
+  display: flex;
+  color: black;
+  justify-content: space-around;
 }
 
 .line {
-    width: 100%;
-    height: 0.5px;
-    background-color: rgb(228, 227, 227);
+  width: 100%;
+  height: 0.5px;
+  background-color: rgb(228, 227, 227);
 }
 
 .left__container__mealType {
-    display: flex;
-    justify-content: space-between;
-    color: rgb(95, 95, 95);
-    font-size: 15px;
-    padding: 8px;
+  display: flex;
+  justify-content: space-between;
+  color: rgb(95, 95, 95);
+  font-size: 15px;
+  padding: 8px;
 }
 
-.left__container__mealType>h5 {
-    margin: 0;
+.left__container__mealType > h5 {
+  margin: 0;
 }
 
 .search__food {
-    width: 150px;
-    height: 20px;
-    padding-left: 4px;
-    background-color: white;
-    color: rgb(168, 168, 168);
-    border-radius: 4px;
-    font-size: 12px;
-    font-style: italic;
-    border: 1px solid rgb(209, 208, 208);
+  width: 150px;
+  height: 20px;
+  padding-left: 4px;
+  background-color: white;
+  color: rgb(168, 168, 168);
+  border-radius: 4px;
+  font-size: 12px;
+  font-style: italic;
+  border: 1px solid rgb(209, 208, 208);
 }
 
 .left__container__food__box {
-    width: 99.7%;
-    min-height: 70px;
-    margin: auto;
-    background-color: white;
-    padding: 10px;
-    /* border: 1px solid black; */
-    /* float: left; */
-    text-align: left;
-    height: fit-content;
+  width: 99.7%;
+  min-height: 70px;
+  margin: auto;
+  background-color: white;
+  padding: 10px;
+  /* border: 1px solid black; */
+  /* float: left; */
+  text-align: left;
+  height: fit-content;
 }
 
-.left__container__food__box>p {
-    color: rgb(175, 174, 174);
-    margin: 10px 30px;
-    font-size: 11px;
-    font-weight: bold;
+.left__container__food__box > p {
+  color: rgb(175, 174, 174);
+  margin: 10px 30px;
+  font-size: 11px;
+  font-weight: bold;
+}
+
+/* ///////////////search drop css start */
+
+.SearchDrop {
+  position: absolute;
+  background: white;
+  border: 1px solid rgb(209, 208, 208);
+  border-radius: 3px;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: left;
+  text-align: left;
+  margin-left: 300px;
+  width: 300px;
+  height: 300px;
+}
+.searchDataList {
+  display: flex;
+  cursor: pointer;
+  width: 100%;
+}
+.searchDataList:hover {
+  background: gray;
+}
+
+.SeletDropOpen {
+  height: 300px;
+  width: 500px;
+  border: 1px solid black;
+  position: absolute;
+  top: 55%;
+  left: 460px;
+}
+.breakfastDataMap {
+  display: flex;
+  justify-content: space-between;
+}
+.breakFastmapDataDelete {
+  cursor: pointer;
+}
+.breakFastmapDataDelete:hover {
+  color: red;
+}
+
+.breakfastDataInsideDiv {
+  display: flex;
+  justify-content: left;
 }
