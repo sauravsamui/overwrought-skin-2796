@@ -22,8 +22,8 @@ function App() {
 
       </Routes>
 
-      <AfterLoginMainPageNavbar />
-      <AfterLoginBody />
+      {/* <AfterLoginMainPageNavbar /> */}
+      {/* <AfterLoginBody /> */}
       {/* <Navbar/>
       
       {/* <AfterLoginBody /> */}
