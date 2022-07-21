@@ -53,19 +53,128 @@ const AfterLoginBody = () => {
         {/* left body section start */}
 
         <div className={style.leftBodyDataDetails}>
-          <div>
+          <div className={style.leftBodyDataDetails_header}>
             <h6>Budget</h6>
             <h6>Food</h6>
             <h6>Exercise</h6>
             <h6>Net</h6>
             <h6>Under</h6>
           </div>
-          <div>
+          <div className={style.leftBodyDataDetails_header_value}>
             <h6>1600</h6>
             <h6>-</h6>
             <h6>-</h6>
             <h6>-</h6>
             <h6>-</h6>
+          </div>
+          <div className={style.line}></div>
+
+          <div className={style.left__container__mealType}>
+            <h5 id={style.breakfast_count}>Breakfast: 0</h5>
+            <input
+              type="text"
+              placeholder=" Search & add food"
+              className={style.search__food}
+              id={style.enter_breakfast}
+            />
+          </div>
+          <div
+            className={style.left__container__food__box}
+            id={style.breakfast_box}
+          >
+            <table
+              id={style.breakfast_table}
+              style={{ display: "none" }}
+            ></table>
+            <p id={style.breakfast_para}>No food logged for breakfast</p>
+          </div>
+
+          <div className={style.line}></div>
+
+          <div className={style.left__container__mealType}>
+            <h5 id={style.breakfast_count}>Lunch: 0</h5>
+            <input
+              type="text"
+              placeholder=" Search & add food"
+              className={style.search__food}
+              id={style.enter_breakfast}
+            />
+          </div>
+          <div
+            className={style.left__container__food__box}
+            id={style.breakfast_box}
+          >
+            <table
+              id={style.breakfast_table}
+              style={{ display: "none" }}
+            ></table>
+            <p id={style.breakfast_para}>No food logged for breakfast</p>
+          </div>
+
+          <div className={style.line}></div>
+
+          <div className={style.left__container__mealType}>
+            <h5 id={style.breakfast_count}>Dinner: 0</h5>
+            <input
+              type="text"
+              placeholder=" Search & add food"
+              className={style.search__food}
+              id={style.enter_breakfast}
+            />
+          </div>
+          <div
+            className={style.left__container__food__box}
+            id={style.breakfast_box}
+          >
+            <table
+              id={style.breakfast_table}
+              style={{ display: "none" }}
+            ></table>
+            <p id={style.breakfast_para}>No food logged for breakfast</p>
+          </div>
+
+          <div className={style.line}></div>
+
+          <div className={style.left__container__mealType}>
+            <h5 id={style.breakfast_count}>Snakes: 0</h5>
+            <input
+              type="text"
+              placeholder=" Search & add food"
+              className={style.search__food}
+              id={style.enter_breakfast}
+            />
+          </div>
+          <div
+            className={style.left__container__food__box}
+            id={style.breakfast_box}
+          >
+            <table
+              id={style.breakfast_table}
+              style={{ display: "none" }}
+            ></table>
+            <p id={style.breakfast_para}>No food logged for breakfast</p>
+          </div>
+
+          <div className={style.line}></div>
+
+          <div className={style.left__container__mealType}>
+            <h5 id={style.breakfast_count}>Breakfast: 0</h5>
+            <input
+              type="text"
+              placeholder=" Search & add food"
+              className={style.search__food}
+              id={style.enter_breakfast}
+            />
+          </div>
+          <div
+            className={style.left__container__food__box}
+            id={style.breakfast_box}
+          >
+            <table
+              id={style.breakfast_table}
+              style={{ display: "none" }}
+            ></table>
+            <p id={style.breakfast_para}>No food logged for breakfast</p>
           </div>
         </div>
       </div>
