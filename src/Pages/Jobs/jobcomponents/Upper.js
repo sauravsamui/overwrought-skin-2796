@@ -273,7 +273,7 @@ export default function Upper() {
           <div style={{width:"45%" , marginLeft:"1%", color:"white"}}>
             <h3>Diversity, Equity, & Inclusion</h3>
             <p>
-              Lose It! is committed to creating a diverse and inclusive
+              Lose It!! is committed to creating a diverse and inclusive
               environment where employees can thrive. An important goal of our
               small team dynamic is making every member feel like they are a
               part of the team.
