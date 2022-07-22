@@ -8,19 +8,48 @@ import dinner from "../../assets/Icons/dinner.png";
 import snaks from "../../assets/Icons/snaks.png";
 import axios from "axios";
 import FoodSearchPage from "./FoodSearchPage";
+import { MdOutlineArrowDownward } from "react-icons/md";
+// import
+// import Calendar from "react-calendar";
+import { Calendar } from "antd";
+import { Link } from "react-router-dom";
+import Comments from "./commentMapDiv/Comments";
 const AfterLoginBody = () => {
   const [showDropdown, setShowDropdown] = useState(false);
   const [SearchData, SetSearchData] = useState([]);
 
+  const [comment, setComment] = useState([]);
+  const [commentText, setCommentText] = useState("");
+
   const [SearchDropdownBreak, setSearchDropdownBreak] = useState(false);
   const [SearchDropdownlunch, setSearchDropdownlunch] = useState(false);
   const [breakFast, setbreakfast] = useState([]);
+  const [commentOpen, setCommentOpen] = useState(false);
   const [lunchh, setlunch] = useState([]);
   const [dinnerr, setdinner] = useState([]);
+  const onPanelChange = (value, mode) => {
+    console.log(value.format("YYYY-MM-DD"), mode);
+  };
 
   const [selectDrop, setSelectDrop] = useState(false);
   const hanldeDropOpen = () => {
     setShowDropdown(!showDropdown);
+  };
+
+  const hanldeaddcomment = () => {
+    setComment([...comment, { first: commentText, reply: [] }]);
+
+    //   axios
+    //     .post(`http://localhost:8080/comments`, {
+    //       first: commentText,
+    //       reply: [],
+    //     })
+    //     .then((response) => {
+    //       axios.get(`http://localhost:8080/comments`).then((response) => {
+    //         // console.log("response:", response.data);
+    //         setComment(response.data);
+    //       });
+    //     });
   };
 
   const hanldeSearch = (b, e) => {
@@ -298,6 +327,7 @@ const AfterLoginBody = () => {
             <div className={style.line}></div>
             <div className={style.left__container__mealType}>
               <h5 id={style.breakfast_count}>Snakes: 0</h5>
+              <button style={{ zIndex: "1" }}>c</button>
               <input
                 type="text"
                 placeholder=" Search & add food"
@@ -340,7 +370,140 @@ const AfterLoginBody = () => {
         </div>
       </div>
 
-      <div className={style.RightBody}></div>
+      <div className={style.RightBody}>
+        <div className={style.calendarr}>
+          <input
+            type="date"
+            id="start"
+            name="trip-start"
+            value="2018-07-22"
+            min="2018-01-01"
+            max="2018-12-31"
+          />
+        </div>
+
+        <div className={style.right__data__days}>
+          <Link to="" id={style.my__day}>
+            My Day
+          </Link>
+          <Link to="" id={style.my__week}>
+            My Week
+          </Link>
+          <Link to="" id={style.my__nutrients}>
+            My Nutrients
+          </Link>
+        </div>
+        <div
+          className={style.right__data__result}
+          id={style.right__data__result}
+          style={{ display: "block" }}
+        >
+          <div className={style.graph}></div>
+          <div className={style.data__result} id={style.daily__data}>
+            <p>Daily calorie budget</p>
+            <p id="calorie_para">1,579</p>
+          </div>
+          <div className={style.data__result}>
+            <p>Food calorie consumed</p>
+            <p id={style.calorie_consumed}>0</p>
+          </div>
+          <div className={style.data__result}>
+            <p>Exercise calorie burned</p>
+            <p id={style.calorie_loss}>0</p>
+          </div>
+          <div className={style.line}></div>
+          <div className={style.data__result} id={style.daily__data}>
+            <p>Net calories so far today</p>
+            <p id={style.net_calorie}>0</p>
+          </div>
+          <div
+            style={{
+              border: "1px solid black",
+              fontSize: "12px",
+              padding: "5px",
+            }}
+          >
+            I did not log food and exercise yet today
+          </div>
+        </div>
+        <div
+          className={style.right__data}
+          style={{ border: "solid 1px #f0f0f0" }}
+        >
+          <div className={style.right__data__days}>
+            <p>Weight</p>
+          </div>
+          <div className={style.right__data__result}>
+            <div className={style.right__data__bottom__left}>
+              <p id={style.show_image}>
+                {/* <i className={style.fa fa-arrow-down fa-3x} aria-hidden="true"></i> */}
+              </p>
+              <h3 id={style.show_weight}>
+                <MdOutlineArrowDownward />0 kg
+              </h3>
+            </div>
+            <div className={style.right__data__bottom__box}>
+              <p>You'll reach your goal of losing -3 kg on dec 29, 2020</p>
+              <div className={style.line}></div>
+              <p>today's weight</p>
+              <div className={style.right__bottom__input__data}>
+                <div className={style.right__data__bottom__box__kg}>
+                  <input type="text" placeholder="57" id={style.weight} />
+                  <p>kg</p>
+                </div>
+                <button id={style.record_weight}>Record</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className={style.right__data__days}>
+          <Link to="" id={style.my__day}>
+            Activities
+          </Link>
+          <Link to="" id={style.my__week}>
+            Friends
+          </Link>
+          <Link to="" id={style.my__nutrients}>
+            Groups
+          </Link>
+        </div>
+
+        <div className={style.comment__box} id={style.comment__box}>
+          <div className={style.comment__box__textarea}>
+            <p>Write a comment</p>
+            <input
+              name="comment"
+              id={style.textarea}
+              cols="30"
+              rows="2"
+              onChange={(e) => {
+                setCommentText(e.target.value);
+              }}
+            ></input>
+            <button
+              onClick={hanldeaddcomment}
+              id={style.share}
+              className={style.share}
+            >
+              Share
+            </button>
+            <div className={style.table__comment} id={style.taskList}>
+              {comment.map((el) => {
+                return (
+                  <div>
+                    <Comments
+                      value={el}
+                      // commentOpen={commentOpen}
+                      // setComment={setCommentOpen}
+                    />
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
