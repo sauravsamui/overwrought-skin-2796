@@ -9,30 +9,39 @@ import Gender from "./Pages/Gender/Gender";
 import Birthday from "./Pages/Birthday/Birthday";
 import Plan from "./Pages/Plan/Plan";
 import LandingPage from './Pages/LandingPage/Landingpage';
+
 import AfterLoginMainPageNavbar from "./component/Navbar/AfterLoginMainPageNavbar";
+
 import AfterLoginBody from "./Pages/AfterLoginMainPage/AfterLoginBody";
+import Jobs from "./Pages/Jobs/Jobs";
 
 function App() {
   return (
     <div className="App">
 
-      <Navbar/>
+      {/* <Navbar/> */}
+
+      <AfterLoginBody />
+      {/* <Navbar/>
       <Routes>
         <Route path='/' element={<LandingPage/>}/>
+        <Route path='/jobs' element={<Jobs/>}/>
         {/* <Route path='/' element={<Home/>}/> */}
+
         <Route path='/question' element={<Question/>}/>
-      <AfterLoginMainPageNavbar />
-      <AfterLoginBody />
+      {/* <AfterLoginMainPageNavbar />
+      <AfterLoginBody /> */}
+
+      {/* <Route path='/question' element={<Question/>}/> */}
+      {/* <AfterLoginMainPageNavbar /> */}
+      {/* <AfterLoginBody />
         <Route path='/weight' element={<Weight/>}/>
         <Route path='/height' element={<Height/>}/>
         <Route path='/gender' element={<Gender/>}/>
         <Route path='/birthday' element={<Birthday/>}/>
         <Route path='/plan' element={<Plan/>}/>
 
-      </Routes> 
-
-    
-
+      </Routes>  */}
     </div>
   );
 }
