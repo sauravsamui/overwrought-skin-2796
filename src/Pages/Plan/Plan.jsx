@@ -6,7 +6,7 @@ import star from "./star.png"
 //FcCalendar FcRating
 const Plan = () => {
 const [date,setDate] = useState("")
-    let handleContinue=(value)=>{
+    let handleContinue=()=>{
         const today = new Date()
         let m = today.toLocaleString('default', { month: 'long' })
         let t = today.getDate()
@@ -16,7 +16,6 @@ const [date,setDate] = useState("")
     }
     useEffect(() => {
       handleContinue()
-        console.log(1)
       return () => {
         
       }
