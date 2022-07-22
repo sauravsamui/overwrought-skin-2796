@@ -22,7 +22,7 @@ export default function BodyBlog() {
                 <img src="https://assets.loseit.com/website/home/Home_LoseWeight.svg" alt="ribbon" />
                 <p>Reach your goals and continue to set new ones for a happier, healthier you!</p>
             </div>
-            <a data-destination="onboarding" data-source="loseit-header" href="https://loseit.com/get-started-v2/?source=loseit-header">Get Started</a>
+            <a data-destination="onboarding" data-source="loseit-header" href="https://loseit.com/get-started-v2/?source=loseit-header"></a>
         </div>
     
      </div>
