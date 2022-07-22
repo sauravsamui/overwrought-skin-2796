@@ -5,6 +5,8 @@ import BodySlider from './HomePage/BodySlider'
 import './HomePage/header.module.css'
 import MidBody from './HomePage/MidBody'
 import SliderSlick from './HomePage/SliderSlick'
+import HomeFooter from './HomePage/HomeFooter'
+
 export default function Homepage() {
   return (
     <div>
@@ -13,6 +15,7 @@ export default function Homepage() {
       <BodySlider />
       <MidBody />
       <SliderSlick />
+      <HomeFooter />
     </div>
   )
 }

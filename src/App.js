@@ -21,8 +21,8 @@ function App() {
         <Route path='/' element={<LandingPage/>}/>
         {/* <Route path='/' element={<Home/>}/> */}
         <Route path='/question' element={<Question/>}/>
-      <AfterLoginMainPageNavbar />
-      <AfterLoginBody />
+      {/* <AfterLoginMainPageNavbar />
+      <AfterLoginBody /> */}
         <Route path='/weight' element={<Weight/>}/>
         <Route path='/height' element={<Height/>}/>
         <Route path='/gender' element={<Gender/>}/>
