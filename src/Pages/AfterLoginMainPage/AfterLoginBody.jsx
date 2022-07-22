@@ -13,13 +13,18 @@ import { MdOutlineArrowDownward } from "react-icons/md";
 // import Calendar from "react-calendar";
 import { Calendar } from "antd";
 import { Link } from "react-router-dom";
+import Comments from "./commentMapDiv/Comments";
 const AfterLoginBody = () => {
   const [showDropdown, setShowDropdown] = useState(false);
   const [SearchData, SetSearchData] = useState([]);
 
+  const [comment, setComment] = useState([]);
+  const [commentText, setCommentText] = useState("");
+
   const [SearchDropdownBreak, setSearchDropdownBreak] = useState(false);
   const [SearchDropdownlunch, setSearchDropdownlunch] = useState(false);
   const [breakFast, setbreakfast] = useState([]);
+  const [commentOpen, setCommentOpen] = useState(false);
   const [lunchh, setlunch] = useState([]);
   const [dinnerr, setdinner] = useState([]);
   const onPanelChange = (value, mode) => {
@@ -29,6 +34,22 @@ const AfterLoginBody = () => {
   const [selectDrop, setSelectDrop] = useState(false);
   const hanldeDropOpen = () => {
     setShowDropdown(!showDropdown);
+  };
+
+  const hanldeaddcomment = () => {
+    setComment([...comment, { first: commentText, reply: [] }]);
+
+    //   axios
+    //     .post(`http://localhost:8080/comments`, {
+    //       first: commentText,
+    //       reply: [],
+    //     })
+    //     .then((response) => {
+    //       axios.get(`http://localhost:8080/comments`).then((response) => {
+    //         // console.log("response:", response.data);
+    //         setComment(response.data);
+    //       });
+    //     });
   };
 
   const hanldeSearch = (b, e) => {
@@ -432,6 +453,53 @@ const AfterLoginBody = () => {
                 </div>
                 <button id={style.record_weight}>Record</button>
               </div>
+            </div>
+          </div>
+        </div>
+
+        <div className={style.right__data__days}>
+          <Link to="" id={style.my__day}>
+            Activities
+          </Link>
+          <Link to="" id={style.my__week}>
+            Friends
+          </Link>
+          <Link to="" id={style.my__nutrients}>
+            Groups
+          </Link>
+        </div>
+
+        <div className={style.comment__box} id={style.comment__box}>
+          <div className={style.comment__box__textarea}>
+            <p>Write a comment</p>
+            <input
+              name="comment"
+              id={style.textarea}
+              cols="30"
+              rows="2"
+              onChange={(e) => {
+                setCommentText(e.target.value);
+              }}
+            ></input>
+            <button
+              onClick={hanldeaddcomment}
+              id={style.share}
+              className={style.share}
+            >
+              Share
+            </button>
+            <div className={style.table__comment} id={style.taskList}>
+              {comment.map((el) => {
+                return (
+                  <div>
+                    <Comments
+                      value={el}
+                      // commentOpen={commentOpen}
+                      // setComment={setCommentOpen}
+                    />
+                  </div>
+                );
+              })}
             </div>
           </div>
         </div>

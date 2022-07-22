@@ -400,3 +400,33 @@
   font-weight: bold;
 }
 
+.comment__box {
+  display: block;
+  width: 100%;
+  max-height: 200px;
+  background-color: #F7F8F9;
+  overflow: auto;
+  /* display: flex; */
+}
+
+.comment__box__textarea>p {
+  font-size: 11px;
+  font-weight: bold;
+}
+
+.comment__box__textarea>button {
+  border-radius: 4px;
+  border: none;
+  background-color: rgb(224, 221, 221);
+  padding: 5px;
+  cursor: pointer;
+  display: block;
+  text-align:end;
+  align-items:end;
+margin-left:80% ;
+}
+
+#textarea{
+  border:1px solid gray;height:30px;
+  width:160px;
+}
