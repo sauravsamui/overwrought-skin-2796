@@ -79,7 +79,9 @@ export default function BodySlider() {
             </div>
 
         </Slider>
+        
       </div>
+     <button id>Get Weight Loss Tips</button>
     </div>
   )
 }

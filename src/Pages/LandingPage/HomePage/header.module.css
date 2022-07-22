@@ -272,3 +272,83 @@ margin-top: 2%;
     padding:8%;
     font-size: 0.7em;
 }
+.button1{
+    border:1px solid , white;
+    margin-top: 2%;
+    width: 20%;
+    height: 49px;
+    border-radius: 4px;
+    color: white;
+    background-color: #183962;
+
+}
+/* .mobileFlex{
+    display:flex;
+    margin-top: 4%;
+    background-image: url(	"https://assets.loseit.com/website/home/Pattern_50opacity_Long.svg");
+    border:1px solid red;
+    width: 100%;
+    height: nu;
+    
+} */
+.mobileflex>a>img{
+    width: 10%;
+    padding: 4%;
+}
+/* .mobileFlex>div{
+    width:10%;
+    border:1px solid blue;
+    display:flex;
+    margin: auto;
+    display: flex;
+    margin-bottom: 2%;
+} */
+
+
+
+
+
+
+
+/* ////////////footer//////////// */
+.footer{
+    
+    height:500px;
+    background-color: #183962;
+    margin-top: 4%;
+    width:100%;
+
+    border:2px red
+}
+.footer p {
+    font-size: smaller;
+}
+
+.flexFooter{
+    display: flex;
+    /* border: 1px solid pink; */
+    height: 300px;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 5%;
+}
+
+.underflexFooter{
+    /* border: 1px solid white; */
+    width:25%;
+
+    color:white;
+    margin-top: 5%;
+
+
+}
+
+.iconFlex{
+
+}
+
+
+.lastdiv{
+    color: white;
+    font-size: 14px;
+}

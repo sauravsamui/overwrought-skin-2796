@@ -1,0 +1,27 @@
+.headerOne{
+    width: 80%;
+    margin: auto;
+    align-items: center;
+    padding: 2%;
+    /* border: 1px solid black; */
+}
+.loginButton{
+    width: 220%;
+    height: 32px;
+    border-radius: 4px;
+    /* margin-top: 2%; */
+    /* padding:2% ; */
+    color: white;
+     background-color: orange;
+}
+.banner{
+    background: url("https://assets.loseit.com/website/corporate/InteriorHeaderPattern.svg")  #FF8D00;
+
+    background-position: 100% 50%;
+    background-size: 100% 500px;
+    height: 300px;
+    background-repeat: repeat;
+    /* border:1px solid teal; */
+    
+
+}

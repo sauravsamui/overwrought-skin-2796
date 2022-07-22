@@ -35,6 +35,7 @@ export default function MidBody() {
                 </div>
                 <button style={{color:"white",backgroundColor:"orange", borderRadius:"5px", fontSize:"smaller",padding:"0.6%"}}>Share Your Story</button>
             </div>
+           
         </div>
     )
 }
