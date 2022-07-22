@@ -23,7 +23,7 @@
 }
 
 .headerTwo{
-    border: 1px solid black;
+    /* border: 1px solid black; */
     /* background-color: orange; */
     background: url("https://assets.loseit.com/website/home/Wave.png"),orange;
     height: 500px;
@@ -101,4 +101,174 @@ margin-top: 2%;
 
 .flexElement img{
     max-width: 47%;
+}
+
+/* -------body-slider--------- */
+.slider{
+    /* border: 1px solid  ; */
+    margin: auto;
+
+}
+
+.features{
+
+}
+
+
+
+
+
+/* //////////////body-blog/////////////////// */
+
+.midtxt{
+    margin-top: 5%;
+    /* border: 1px solid ; */
+    align-items:center;
+    text-align:center; 
+    font-size: 1.9vw;
+    font-weight: 500;
+    color:#183962; ;
+}
+.flex{
+    display:flex;
+     margin-left:10%;
+     margin-right:10%;
+     /* border: 1px solid; */
+     margin-top: 4%;
+     justify-content: space-evenly;
+}
+.flexElement{
+    /* border: 1px solid ; */
+ 
+}
+.flexElement h3{
+    color: orange;
+    font-weight: 700;
+
+}
+
+.flexElement img{
+    margin-left: 23%;
+}
+
+.flexElement p{
+
+}
+.features {    
+    width: 80%;
+    height: auto;
+    margin: auto;
+    font-size: smaller;
+    background-color: white;
+    padding: 5%;
+    border-radius: 5px;
+}
+
+.imgdiv{
+    /* border: 1px solid red; */
+    width: 50%;
+    justify-content: center;
+    margin: auto;
+    
+}
+.imgdiv>img{
+    margin: auto;
+}
+.sliderS {
+    /* border: 1px solid red; */
+    width: 50%;
+    margin: auto;
+    margin-top: 1%;
+    
+    /* height:40vh; */
+    /* display: block; */
+}
+.mainSliderCont{
+    /* border: 1px solid red; */
+    background-color: #f1f1f1;
+    padding: 4%;
+}
+.divtxt{
+    /* border: 1px solid blue; */
+    width: 50%;
+}
+.slick-list{
+    margin-top: 10%;
+}
+/* --------------lower-mid------------ */
+.mainmid{
+    width: 100%;
+    /* border: 1px solid blue; */
+}
+.midimg1{
+    margin: auto;
+}
+.midimg1>img{
+    width: 20%;
+    margin: auto;
+}
+.midtxt{
+    /* border: 1px solid red; */
+    width: 60%;
+    margin: auto;
+    color: orange;
+    font-size: 3.8em;
+}
+.midtxt>h2{
+    color: #455555;
+    letter-spacing: .4em;
+    font-size: 2em;
+    font-weight: 700;
+    margin: 10px auto;
+}
+.mainmid>h2{
+    color: #455555;
+    letter-spacing: .4em;
+    font-size: 1.4em;
+    font-weight: 700;
+    margin: 10px auto;
+}
+.mainmid #seenOnLogos{
+    /* border: 1px solid; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0 50px;
+}
+#seenOnLogos img{
+    width: 10%;
+    margin: 2%;
+}
+.story{
+    width: 100%;
+    background-color: #183962;
+    text-align: center;
+}
+.flexCard{
+    display: flex;
+    width: 50%;
+    font-size: 0.7em;
+    margin: auto;
+    padding: 2%;
+}
+.card1, .card2{
+    width: 90%;
+    padding: 2%;
+}
+.card1>img, .card2>img{
+    width: 45%;
+    margin: auto;
+}
+/* ----------------slick lower------------ */
+.slickCont{
+    width: 50%;
+    margin: auto;
+}
+.mainContainer{
+    padding: 1%;
+}
+.slcard{
+    padding:8%;
+    font-size: 0.7em;
 }
