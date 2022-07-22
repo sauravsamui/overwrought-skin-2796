@@ -8,6 +8,8 @@ import dinner from "../../assets/Icons/dinner.png";
 import snaks from "../../assets/Icons/snaks.png";
 import axios from "axios";
 import FoodSearchPage from "./FoodSearchPage";
+import { MdOutlineArrowDownward } from "react-icons/md";
+// import
 // import Calendar from "react-calendar";
 import { Calendar } from "antd";
 import { Link } from "react-router-dom";
@@ -392,6 +394,45 @@ const AfterLoginBody = () => {
           <div className={style.data__result} id={style.daily__data}>
             <p>Net calories so far today</p>
             <p id={style.net_calorie}>0</p>
+          </div>
+          <div
+            style={{
+              border: "1px solid black",
+              fontSize: "12px",
+              padding: "5px",
+            }}
+          >
+            I did not log food and exercise yet today
+          </div>
+        </div>
+        <div
+          className={style.right__data}
+          style={{ border: "solid 1px #f0f0f0" }}
+        >
+          <div className={style.right__data__days}>
+            <p>Weight</p>
+          </div>
+          <div className={style.right__data__result}>
+            <div className={style.right__data__bottom__left}>
+              <p id={style.show_image}>
+                {/* <i className={style.fa fa-arrow-down fa-3x} aria-hidden="true"></i> */}
+              </p>
+              <h3 id={style.show_weight}>
+                <MdOutlineArrowDownward />0 kg
+              </h3>
+            </div>
+            <div className={style.right__data__bottom__box}>
+              <p>You'll reach your goal of losing -3 kg on dec 29, 2020</p>
+              <div className={style.line}></div>
+              <p>today's weight</p>
+              <div className={style.right__bottom__input__data}>
+                <div className={style.right__data__bottom__box__kg}>
+                  <input type="text" placeholder="57" id={style.weight} />
+                  <p>kg</p>
+                </div>
+                <button id={style.record_weight}>Record</button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
