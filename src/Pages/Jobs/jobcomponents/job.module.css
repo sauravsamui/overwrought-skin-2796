@@ -22,6 +22,42 @@
     height: 300px;
     background-repeat: repeat;
     /* border:1px solid teal; */
-    
+    font-weight: bold;
 
+}
+.banner button{
+    border: 1px solid white;
+    width: 13%;
+    height: 50px;
+    background-color: white;
+    font-weight: 500;
+    border-radius: 5%;
+    /* margin: auto; */
+    /* margin: top -90px ; */
+    /* margin-top: -1000px; */
+    /* margin-bottom: 10%; */
+    /* padding-top: 5%; */
+    /* padding-bottom: 45%; */
+
+}
+
+.imageFlex {
+    display: flex;
+    /* border: 3px solid green; */
+    margin-top: 5%;
+    justify-content: center;
+    height: auto;
+    width: 100%;
+}
+
+.body{
+    width: 50%;
+    margin:auto;
+}
+/* .giftdiv *{
+border:1px solid blue
+} */
+.gift > img{
+    width: 30%;
+    /* border:1px solid red */
 }
