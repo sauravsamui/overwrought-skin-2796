@@ -8,6 +8,9 @@ import dinner from "../../assets/Icons/dinner.png";
 import snaks from "../../assets/Icons/snaks.png";
 import axios from "axios";
 import FoodSearchPage from "./FoodSearchPage";
+// import Calendar from "react-calendar";
+import { Calendar } from "antd";
+import { Link } from "react-router-dom";
 const AfterLoginBody = () => {
   const [showDropdown, setShowDropdown] = useState(false);
   const [SearchData, SetSearchData] = useState([]);
@@ -17,6 +20,9 @@ const AfterLoginBody = () => {
   const [breakFast, setbreakfast] = useState([]);
   const [lunchh, setlunch] = useState([]);
   const [dinnerr, setdinner] = useState([]);
+  const onPanelChange = (value, mode) => {
+    console.log(value.format("YYYY-MM-DD"), mode);
+  };
 
   const [selectDrop, setSelectDrop] = useState(false);
   const hanldeDropOpen = () => {
@@ -298,6 +304,7 @@ const AfterLoginBody = () => {
             <div className={style.line}></div>
             <div className={style.left__container__mealType}>
               <h5 id={style.breakfast_count}>Snakes: 0</h5>
+              <button style={{ zIndex: "1" }}>c</button>
               <input
                 type="text"
                 placeholder=" Search & add food"
@@ -340,7 +347,54 @@ const AfterLoginBody = () => {
         </div>
       </div>
 
-      <div className={style.RightBody}></div>
+      <div className={style.RightBody}>
+        <div className={style.calendarr}>
+          <input
+            type="date"
+            id="start"
+            name="trip-start"
+            value="2018-07-22"
+            min="2018-01-01"
+            max="2018-12-31"
+          />
+        </div>
+
+        <div className={style.right__data__days}>
+          <Link to="" id={style.my__day}>
+            My Day
+          </Link>
+          <Link to="" id={style.my__week}>
+            My Week
+          </Link>
+          <Link to="" id={style.my__nutrients}>
+            My Nutrients
+          </Link>
+        </div>
+        <div
+          className={style.right__data__result}
+          id={style.right__data__result}
+          style={{ display: "block" }}
+        >
+          <div className={style.graph}></div>
+          <div className={style.data__result} id={style.daily__data}>
+            <p>Daily calorie budget</p>
+            <p id="calorie_para">1,579</p>
+          </div>
+          <div className={style.data__result}>
+            <p>Food calorie consumed</p>
+            <p id={style.calorie_consumed}>0</p>
+          </div>
+          <div className={style.data__result}>
+            <p>Exercise calorie burned</p>
+            <p id={style.calorie_loss}>0</p>
+          </div>
+          <div className={style.line}></div>
+          <div className={style.data__result} id={style.daily__data}>
+            <p>Net calories so far today</p>
+            <p id={style.net_calorie}>0</p>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
