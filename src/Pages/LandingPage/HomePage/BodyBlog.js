@@ -4,20 +4,20 @@ import style from  "./header.module.css";
 export default function BodyBlog() {
   return (
     <div className={style.BodyBlog}>
-     <div className="midtxt" style={{alignItems:"center",textAlign:"center"}}><p>Weight Loss Made Easy</p></div>
+     <div className= {style.midtxt}><p>Weight Loss Made Easy</p></div>
      <div className={style.midflex}>
-        <div className="flex" style={{display:"flex", marginLeft:"10%",marginRight:"10%"}}>
-            <div className="flexElement">
+        <div className={style.flex}>
+            <div className={style.flexElement}>
                 <h3>Set Your Goals</h3>
                 <img src="https://assets.loseit.com/website/home/Home_SetGoal.svg" alt="flag" />
                 <p>Tell us what you want to acheive and receive personalized goals.</p>
             </div>
-            <div className="flexElement">
+            <div className={style.flexElement}>
                 <h3>Track Your Food</h3>
                 <img src="https://assets.loseit.com/website/home/Home_TrackFoods.svg" alt="food"/>
                 <p>Learn about the foods you’re eating and keep your calories within your daily budget.</p>
             </div>
-            <div className="flexElement">
+            <div className={style.flexElement}>
                 <h3>Lose Weight</h3>
                 <img src="https://assets.loseit.com/website/home/Home_LoseWeight.svg" alt="ribbon" />
                 <p>Reach your goals and continue to set new ones for a happier, healthier you!</p>

@@ -102,3 +102,33 @@ margin-top: 2%;
 .flexElement img{
     max-width: 47%;
 }
+
+/* -------body-slider--------- */
+.slider{
+    border: 1px solid  ;
+    margin: auto;
+
+}
+
+.features{
+
+}
+
+
+
+
+
+/* //////////////body-blog/////////////////// */
+
+.midtxt{
+    align-items:center;
+    text-align:center; 
+}
+.flex{
+    display:flex;
+     margin-left:10%;
+     margin-right:10%;
+}
+.flexElement{
+
+}
