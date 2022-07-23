@@ -6,6 +6,7 @@ import './HomePage/header.module.css'
 import MidBody from './HomePage/MidBody'
 import SliderSlick from './HomePage/SliderSlick'
 import HomeFooter from './HomePage/HomeFooter'
+import Getstartedonmobile from '../Howitworks/Getstartedonmobile.jsx'
 
 
 export default function Homepage() {
@@ -16,6 +17,7 @@ export default function Homepage() {
       <BodySlider />
       <MidBody />
       <SliderSlick />
+      <Getstartedonmobile/>
       <HomeFooter />
     </div>
   )
