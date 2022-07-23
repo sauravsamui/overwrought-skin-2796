@@ -9,9 +9,7 @@ import snaks from "../../assets/Icons/snaks.png";
 import axios from "axios";
 import FoodSearchPage from "./FoodSearchPage";
 import { MdOutlineArrowDownward } from "react-icons/md";
-// import
-// import Calendar from "react-calendar";
-import { Calendar } from "antd";
+
 import { Link } from "react-router-dom";
 import Comments from "./commentMapDiv/Comments";
 import AfterLoginMainPageNavbar from "../../component/Navbar/AfterLoginMainPageNavbar";
@@ -40,17 +38,6 @@ const AfterLoginBody = () => {
   const hanldeaddcomment = () => {
     setComment([...comment, { first: commentText, reply: [] }]);
 
-    //   axios
-    //     .post(`http://localhost:8080/comments`, {
-    //       first: commentText,
-    //       reply: [],
-    //     })
-    //     .then((response) => {
-    //       axios.get(`http://localhost:8080/comments`).then((response) => {
-    //         // console.log("response:", response.data);
-    //         setComment(response.data);
-    //       });
-    //     });
   };
 
   const hanldeSearch = (b, e) => {
@@ -326,11 +313,10 @@ const AfterLoginBody = () => {
               ""
             )}
 
-            {/* Snakesstart........................................ */}
+            {/* Snackesstart........................................ */}
             <div className={style.line}></div>
             <div className={style.left__container__mealType}>
-              <h5 id={style.breakfast_count}>Snakes: 0</h5>
-              <button style={{ zIndex: "1" }}>c</button>
+              <h5 id={style.breakfast_count}>Snackes: 0</h5>
               <input
                 type="text"
                 placeholder=" Search & add food"
@@ -497,8 +483,6 @@ const AfterLoginBody = () => {
                   <div>
                     <Comments
                       value={el}
-                      // commentOpen={commentOpen}
-                      // setComment={setCommentOpen}
                     />
                   </div>
                 );

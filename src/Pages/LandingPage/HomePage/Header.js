@@ -6,8 +6,8 @@ export default function Header() {
   return (
     <div className={style.landingHeader}>
       <div className={style.jobBanner}>
-        <a href="/jobs/">
-          <p
+        <Link to={"/jobs"}>
+        <p
             
             style={{
               fontWeight: "bold",
@@ -17,7 +17,7 @@ export default function Header() {
           >
             Lose It! is hiring! Click here to see our open positions.
           </p>
-        </a>
+        </Link>
       </div>
       <div className={style.headerOne}>
         <div

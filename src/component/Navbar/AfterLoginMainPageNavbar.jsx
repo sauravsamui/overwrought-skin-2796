@@ -6,8 +6,8 @@ import { useDispatch, useSelector } from "react-redux";
 import { logout } from '../../store/auth/auth.action';
 
 // AiOutlineSetting;
-let loginAuth= JSON.parse(localStorage.getItem("loginAuth"))
-let signupAuth= JSON.parse(localStorage.getItem("signupAuth"))
+let loginAuth= JSON.parse(localStorage.getItem("loginAuth"))|| ""
+let signupAuth= JSON.parse(localStorage.getItem("signupAuth"))||""
 const AfterLoginMainPageNavbar = () => {
   const {isAuth} = useSelector((state)=>state.auth)
   const dispatch = useDispatch()

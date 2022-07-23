@@ -8,6 +8,7 @@ import Adviceslider from './Adviceslider/Adviceslider';
 import Basicslider from './Basicslider/Basicslider';
 import Getstartedonmobile from './Getstartedonmobile';
 import {Link} from "react-router-dom"
+import HomeFooter from "../LandingPage/HomePage/HomeFooter"
 
 import {
   Box,
@@ -427,6 +428,7 @@ const Howitworks = () => {
       <br></br>
 
       <Getstartedonmobile/>
+      <HomeFooter/>
         
     </>
   );
