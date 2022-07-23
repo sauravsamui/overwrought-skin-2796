@@ -1,7 +1,7 @@
 .jobBanner{
     background-color: #85E0FF;
     height: 51px;
-    font-size: 0.9em
+    font-size: 1.4em
     
 }
 
@@ -13,22 +13,24 @@
     /* border: 1px solid black; */
 }
 .loginButton{
-    width: 220%;
-    height: 32px;
+    width: 290%;
+    height: 35px;
     border-radius: 4px;
     /* margin-top: 2%; */
     /* padding:2% ; */
     color: white;
      background-color: orange;
+     font-size: small;
+     font-weight: 500;
 }
 
 .headerTwo{
     /* border: 1px solid black; */
     /* background-color: orange; */
-    background: url("https://assets.loseit.com/website/home/Wave.png"),orange;
+    background: url("https://assets.loseit.com/website/home/Wave.png"),rgb(246, 130, 31);
     height: 500px;
     /* width: 100%; */
-    background-size: 1230px 500px;                     
+    background-size: 1350px 396px;                     
     background-repeat: no-repeat;
     align-items: center;
     
@@ -120,12 +122,12 @@ margin-top: 2%;
 
 /* //////////////body-blog/////////////////// */
 
-.midtxt{
+.midtxt p{
     margin-top: 5%;
     /* border: 1px solid ; */
     align-items:center;
     text-align:center; 
-    font-size: 1.9vw;
+    font-size: 2.3vw;
     font-weight: 500;
     color:#183962; ;
 }
@@ -135,10 +137,12 @@ margin-top: 2%;
      margin-right:10%;
      /* border: 1px solid; */
      margin-top: 4%;
-     justify-content: space-evenly;
+     justify-content: space-between;
 }
 .flexElement{
-    /* border: 1px solid ; */
+    border: 1px solid white;
+    width: 80%;
+    /* margin: auto; */
  
 }
 .flexElement h3{
@@ -190,7 +194,8 @@ margin-top: 2%;
 }
 .divtxt{
     /* border: 1px solid blue; */
-    width: 50%;
+    width: 60%;
+    font-size: medium;
 }
 .slick-list{
     margin-top: 10%;
@@ -198,6 +203,7 @@ margin-top: 2%;
 /* --------------lower-mid------------ */
 .mainmid{
     width: 100%;
+    /* padding:5%; */
     /* border: 1px solid blue; */
 }
 .midimg1{
@@ -212,7 +218,8 @@ margin-top: 2%;
     width: 60%;
     margin: auto;
     color: orange;
-    font-size: 3.8em;
+    font-size: 7em;
+    font-weight: bold;
 }
 .midtxt>h2{
     color: #455555;
@@ -220,6 +227,13 @@ margin-top: 2%;
     font-size: 2em;
     font-weight: 700;
     margin: 10px auto;
+}
+.midhr{
+    width: 7%;
+    height: 10px;
+    color: orange;
+    background-color: orange;
+    margin: auto;
 }
 .mainmid>h2{
     color: #455555;
@@ -237,7 +251,7 @@ margin-top: 2%;
     margin: 0 50px;
 }
 #seenOnLogos img{
-    width: 10%;
+    width: 14%;
     margin: 2%;
 }
 .story{
@@ -247,8 +261,8 @@ margin-top: 2%;
 }
 .flexCard{
     display: flex;
-    width: 50%;
-    font-size: 0.7em;
+    width: 75%;
+    font-size: 1.199em;
     margin: auto;
     padding: 2%;
 }
@@ -262,11 +276,20 @@ margin-top: 2%;
 }
 /* ----------------slick lower------------ */
 .slickCont{
-    width: 50%;
+    width: 78%;
     margin: auto;
 }
 .mainContainer{
     padding: 1%;
+    font-size:2.0em;
+    font-weight: 50px;
+    color: grey;
+    /* border: 1px solid; */
+}
+#mainp{
+    font-size: 0.8em;
+    font-weight: 1px;
+    color: grey;
 }
 .slcard{
     padding:8%;
@@ -275,12 +298,14 @@ margin-top: 2%;
 .button1{
     border:1px solid , white;
     margin-top: 2%;
-    width: 20%;
+    width: 16%;
     height: 49px;
     border-radius: 4px;
+    margin-bottom: 2%;
     color: white;
     background-color: #183962;
-
+    font-size: 1.3em;
+    
 }
 /* .mobileFlex{
     display:flex;
@@ -342,6 +367,10 @@ margin-top: 2%;
 
 
 }
+.underflexFooter p{
+    font-size: 1.2em;
+    
+}
 
 .iconFlex{
 
@@ -350,5 +379,10 @@ margin-top: 2%;
 
 .lastdiv{
     color: white;
-    font-size: 14px;
+    font-size: 1.5em;
+}
+.jobsliderimg{
+    width: 50%;
+    /* margin-left: 3%; */
+    margin: auto;
 }

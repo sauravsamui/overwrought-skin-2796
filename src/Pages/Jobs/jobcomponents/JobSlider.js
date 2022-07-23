@@ -58,8 +58,8 @@ export default function () {
             <Slider {...settings2}>
               <div>
                 <div className={style.slcard}>
-                  <div className={style.slimg}>
-                    <img
+                  <div className={style.jobsliderimg}>
+                    <img 
                       src="https://assets.loseit.com/2020/flexible-hours.png"
                       alt="1"
                     />
@@ -74,7 +74,7 @@ export default function () {
 
               <div>
                 <div className={style.slcard}>
-                  <div className={style.slimg}>
+                  <div className={style.jobsliderimg}>
                     <img
                       src="https://assets.loseit.com/2020/wellness.png"
                       alt="2"
@@ -88,7 +88,7 @@ export default function () {
 
               <div>
                 <div className={style.slcard}>
-                  <div className={style.slimg}>
+                  <div className={style.jobsliderimg}>
                     <img
                       src="https://assets.loseit.com/2020/annual-retreat.png"
                       alt="3"
@@ -101,7 +101,7 @@ export default function () {
               </div>
               <div>
                 <div className={style.slcard}>
-                  <div className={style.slimg}>
+                  <div className={style.jobsliderimg}>
                     <img
                       src="https://assets.loseit.com/2020/vacation.png"
                       alt="4"
@@ -114,7 +114,7 @@ export default function () {
               </div>
               <div>
                 <div className={style.slcard}>
-                  <div className={style.slimg}>
+                  <div className={style.jobsliderimg}>
                     <img
                       src="https://assets.loseit.com/2020/profit-sharing.png"
                       alt="5"
@@ -127,7 +127,7 @@ export default function () {
               </div>
               <div>
                 <div className={style.slcard}>
-                  <div className={style.slimg}>
+                  <div className={style.jobsliderimg}>
                     <img
                       src="https://assets.loseit.com/2020/health-dental-vision.png"
                       alt="6"

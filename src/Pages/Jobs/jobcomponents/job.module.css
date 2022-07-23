@@ -6,8 +6,8 @@
     /* border: 1px solid black; */
 }
 .loginButton{
-    width: 220%;
-    height: 32px;
+    width: 300%;
+    height: 35px;
     border-radius: 4px;
     /* margin-top: 2%; */
     /* padding:2% ; */
@@ -92,6 +92,6 @@ border:1px solid blue
 
 .engg a{
     color:orange;
-    font-size: smaller;
+    font-size: midium;
     margin-left: 5%;
 }

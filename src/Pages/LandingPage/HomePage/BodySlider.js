@@ -33,7 +33,7 @@ export default function BodySlider() {
               </div>
               <div className={style.divtxt} style={{width:"100%"}}>
                 <h3 style={{fontWeight:"bold"}}>Macro Tracking</h3>
-                <p>Set personalized macronutrient goals to ensure you’re getting enough protein, carbs, and more.</p>
+                <p>Set personalized macronutrient goals to ensure you’re getting enough protein.</p>
               </div>
             </div>
           </div>
@@ -54,7 +54,7 @@ export default function BodySlider() {
               </div>
               <div className={style.divtxt} style={{width:"100%"}}>
                 <h3 style={{fontWeight:"bold"}}>Water Tracking</h3>
-                <p>Track your water intake to make sure you're getting the recommended amount daily.</p>
+                <p>Track your water intake to make sure you're getting the recommended.</p>
               </div>
             </div>
           <div>
@@ -74,14 +74,14 @@ export default function BodySlider() {
               </div>
               <div className={style.divtxt} style={{width:"100%"}}>
                 <h3 style={{fontWeight:"bold"}}>Water Tracking</h3>
-                <p>Track your water intake to make sure you're getting the recommended amount daily.</p>
+                <p>Track your water intake to make sure you're getting .</p>
               </div>
             </div>
 
         </Slider>
         
       </div>
-     <button id>Get Weight Loss Tips</button>
+     
     </div>
   )
 }

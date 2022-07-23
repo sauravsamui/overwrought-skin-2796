@@ -7,26 +7,26 @@ export default function HomeFooter() {
     <div className={style.footer}>
         <div className={style.flexFooter}>
             <div className={style.underflexFooter}>
-                <img  style={{width:"40%",}}src='https://assets.loseit.com/website/home/Footer_WhiteKnockOutLogo.svg'/>
+                <img  style={{width:"50%",}}src='https://assets.loseit.com/website/home/Footer_WhiteKnockOutLogo.svg'/>
             </div>
             <div className={style.underflexFooter}>
-              <p style={{fontSize:"22px"}}>Member Resources</p>
-              <Link to={"/howitworks"}><p style={{textAlign:"left", marginLeft:"10%"}}>How It Works</p></Link>
-              <a> <p style={{textAlign:"left", marginLeft:"10%"}}>Premium</p></a>
-              <a> <p style={{textAlign:"left", marginLeft:"10%"}}>Lose It! Blog</p></a>
-              <a><p style={{textAlign:"left", marginLeft:"10%"}}>Lose It! Blog</p></a>
+              <h3 style={{fontSize:"22px"}}>Member Resources</h3>
+              <Link to={"/howitworks"}><p style={{textAlign:"left", marginLeft:"14%"}}>How It Works</p></Link>
+              <a> <p style={{textAlign:"left", marginLeft:"14%"}}>Premium</p></a>
+              <a> <p style={{textAlign:"left", marginLeft:"14%"}}>Lose It! Blog</p></a>
+              <a><p style={{textAlign:"left", marginLeft:"14%"}}>Lose It! Blog</p></a>
             </div>
             <div className={style.underflexFooter}>
-            <p style={{fontSize:"22px"}}>Connect With Us</p>
-             <a><p style={{textAlign:"left", marginLeft:"16%"}}>Press & Media Kit</p></a>
-             <a><p style={{textAlign:"left", marginLeft:"16%"}}>Contact Us</p></a>
-             <a> <p style={{textAlign:"left", marginLeft:"16%"}}>Partners & API</p></a>
-             <a> <p style={{textAlign:"left", marginLeft:"16%"}}>Share Your Story	</p></a>
+            <h3 style={{fontSize:"22px"}}>Connect With Us</h3>
+             <a><p style={{textAlign:"left", marginLeft:"19%"}}>Press & Media Kit</p></a>
+             <a><p style={{textAlign:"left", marginLeft:"19%"}}>Contact Us</p></a>
+             <a> <p style={{textAlign:"left", marginLeft:"19%"}}>Partners & API</p></a>
+             <a> <p style={{textAlign:"left", marginLeft:"19%"}}>Share Your Story	</p></a>
             </div>
-            <div className={style.underflexFooter}><p style={{fontSize:"22px"}}>Our Team</p>
-            <a>  <p style={{textAlign:"left", marginLeft:"30%"}} >About Us </p></a>
-            <a>  <p style={{textAlign:"left", marginLeft:"30%"}}>Careers</p></a>
-            <a>   <p style={{textAlign:"left", marginLeft:"30%"}}>Diversity</p></a>
+            <div className={style.underflexFooter}><h3 style={{fontSize:"22px"}}>Our Team</h3>
+            <a>  <p style={{textAlign:"left", marginLeft:"33%"}} >About Us </p></a>
+            <a>  <p style={{textAlign:"left", marginLeft:"33%"}}>Careers</p></a>
+            <a>   <p style={{textAlign:"left", marginLeft:"33%"}}>Diversity</p></a>
               </div>
         </div>
         <div>
