@@ -29,7 +29,7 @@ export default function Header() {
               <img
                 src="https://assets.loseit.com/website/corporate/LoseIt_Logo_NoTagline_FullColor.svg"
                 alt="Lose It! logo"
-                style={{ width: "59%" }}
+                style={{ width: "66%" }}
               ></img>
             </a>
           </div>

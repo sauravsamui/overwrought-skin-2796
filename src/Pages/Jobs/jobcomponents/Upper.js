@@ -12,7 +12,7 @@ export default function Upper() {
            <img
                 src="https://assets.loseit.com/website/corporate/LoseIt_Logo_FullColor+(1).svg"
                 alt="Lose It! logo"
-                style={{ width: "59%" }}
+                style={{ width: "66%" }}
               ></img>
            </Link>
           </div>
@@ -21,16 +21,16 @@ export default function Upper() {
             <button className={style.loginButton}>Login</button>
             </Link>
            
-          </div>
+          </div> 
         </div>
       </div>
 
       <div className={style.banner}>
-        <p style={{ fontSize: "5vw", padding: "6%", color: "white" }}>
+        <p style={{ fontSize: "5vw", padding: "2%", color: "white" }}>
           Join the Lose It! Team
         </p>
 
-        <button>
+        <button style={{fontSize:"1.4em"}}>
           <a>View Openings</a>
         </button>
       </div>
@@ -98,7 +98,7 @@ export default function Upper() {
               style={{
                 fontSize: "1.1vw",
                 fontWeight: "500",
-                marginTop: "2%",
+                marginTop: "4%",
                 textAlign: "left",
               }}
             >
@@ -276,7 +276,7 @@ export default function Upper() {
           </div>
           <div style={{width:"45%" , marginLeft:"1%", color:"white"}}>
             <p style={{fontSize:"20px",fontWeight:"bold"}}>Diversity, Equity, & Inclusion</p>
-            <p>
+            <p style={{fontSize:"1.2em",marginTop:"2%"}}>
               Lose It!! is committed to creating a diverse and inclusive
               environment where employees can thrive. An important goal of our
               small team dynamic is making every member feel like they are a
@@ -285,7 +285,7 @@ export default function Upper() {
             </div>
           </div><br/><span>
           <div style={{ marginTop: "2%" }}>
-            <button className={style.loginButton} style={{width:"10vw"}}>Learn More</button></div></span>
+            <button className={style.loginButton} style={{width:"10vw", fontSize:"1.4em",marginLeft:"5%"}}>Learn More</button></div></span>
         </div>
       </div>
     </div>

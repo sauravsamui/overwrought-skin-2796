@@ -49,10 +49,10 @@ export default function () {
     <div>
       <div>
         <div className={style.mainContainer}>
-          <h2 style={{ fontWeight: "bold", padding: "1%" }}>
+          <h2 style={{  padding: "1%" }}>
             A Balanced Approach to Weight Loss
           </h2>
-          <p>
+          <p id={style.mainp}>
             Get motivated with these nutrition and wellness tips and user
             success stories!
           </p>
