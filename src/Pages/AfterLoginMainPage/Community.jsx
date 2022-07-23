@@ -152,6 +152,17 @@ const Community = () => {
             </tr>
           </table>
         </div>
+        <div class={style.mid__activity} id={style.mid__activity}>
+          <div class={style.right__header}>Activity</div>
+          <div class={style.comment__box} id={style.comment__box}>
+            <div class={style.comment__box__textarea}>
+              <p>Write a comment</p>
+              <input type="text" id={style.input} />
+              <button id={style.share}>Share</button>
+              <div class={style.table__comment} id={style.taskList}></div>
+            </div>
+          </div>
+        </div>
         <div className={style.right} id={style.right}>
           <div className={style.right__header}>Filter</div>
           <div className={style.right__header}>Friends Activities</div>
