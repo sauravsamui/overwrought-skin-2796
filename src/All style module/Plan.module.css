@@ -81,10 +81,11 @@
     margin: auto;
     width: 45%;
     margin-top: 50px;
-    justify-content: space-between;
+   
 }
 .watermelonInsideDiv{
     text-align: left;
+    margin-left: 15px;
 }
 .calenderDiv{
     display: flex;

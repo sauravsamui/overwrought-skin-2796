@@ -1,13 +1,19 @@
 import React from 'react';
-import weightloss from '../assets/weightloss.jpg';
-import whylossit from '../assets/whylossit.jpg';
-import basic from '../assets/basic.jpg';
-import premium from '../assets/premium.jpg';
+import weightloss from '../../assets/weightloss.jpg';
+import whylossit from '../../assets/whylossit.jpg';
+import basic from '../../assets/basic.jpg';
+import premium from '../../assets/premium.jpg';
+import Gettingslider from './Gettingslider/Gettingslider';
+import Adviceslider from './Adviceslider/Adviceslider';
+import Basicslider from './Basicslider/Basicslider';
+import Getstartedonmobile from './Getstartedonmobile';
+import {Link} from "react-router-dom"
+import HomeFooter from "../LandingPage/HomePage/HomeFooter"
 
 import {
   Box,
   Center,
-  Link,
+ 
   Image,
   Flex,
   Container,
@@ -33,10 +39,13 @@ import {
   TabPanel,
 } from '@chakra-ui/react';
 
+
+
 const Howitworks = () => {
   return (
     <>
       <Flex>
+        <Link to={"/"}>
         <Box p="10">
           <Image
             src="https://my.loseit.com/LoseIt_Logo_FullColor.png"
@@ -45,11 +54,13 @@ const Howitworks = () => {
             height="10vh"
           />
         </Box>
+        </Link>
+        
         <Spacer />
         <Box p="10">
-          <Button color="white" bg="#FF9400" width="130px">
+          <Link to={"/login"}> <Button color="white" bg="#FF9400" width="130px">
             Login
-          </Button>
+          </Button></Link>
         </Box>
       </Flex>
       <Center
@@ -67,8 +78,8 @@ const Howitworks = () => {
       <br></br>
       <br></br>
       <br></br>
-
-      <Heading
+     <Link to={"/question"}>
+     <Heading
         fontWeight="700"
         color="#183962"
         fontSize="2em"
@@ -76,7 +87,8 @@ const Howitworks = () => {
         textAlign="center"
       >
         Calorie Counting
-      </Heading>
+      </Heading></Link>
+      
 
       <Container maxW={'5xl'} p="5">
         <Box
@@ -99,7 +111,7 @@ const Howitworks = () => {
               marginLeft={{ base: '0', sm: '25%' }}
               marginTop="5%"
             >
-              <Link textDecoration="none" _hover={{ textDecoration: 'none' }}>
+              {/* <Link textDecoration="none" _hover={{ textDecoration: 'none' }}> */}
                 <Image
                   w="205px"
                   // borderRadius="lg"
@@ -109,7 +121,7 @@ const Howitworks = () => {
                   alt="some good alt text"
                   objectFit="contain"
                 />
-              </Link>
+              {/* </Link> */}
             </Box>
           </Box>
           <Box
@@ -150,9 +162,9 @@ const Howitworks = () => {
 
         <Divider marginTop="5" />
       </Container>
-
+      <Link to={"/question"}>
       <Center>
-        <Button
+       <Button
           bg="#FF9400"
           color="white"
           variant="solid"
@@ -162,7 +174,7 @@ const Howitworks = () => {
           Get Lose It!
         </Button>
       </Center>
-
+      </Link> 
       <br></br>
       <br></br>
       <br></br>
@@ -276,7 +288,9 @@ const Howitworks = () => {
         </div>
       </Box>
 
-      <Center>
+      
+        <Link to={"/question"}>
+        <Center>
         <Button
           bg="#FF9400"
           color="white"
@@ -286,7 +300,9 @@ const Howitworks = () => {
         >
           Get Lose It!
         </Button>
-      </Center>
+        </Center>
+        </Link>
+      
 
       <br></br>
       <br></br>
@@ -331,7 +347,9 @@ const Howitworks = () => {
                   </div>
 
                   {/* //////////////////////////get it basic button ////////////////////////*/}
-                  <Center bg="#183962">
+                  
+                    <Link to={"/question"}>
+                    <Center bg="#183962">
                     <Button
                       bg="#FF9400"
                       color="white"
@@ -341,7 +359,9 @@ const Howitworks = () => {
                     >
                       Get Lose It! Basic
                     </Button>
-                  </Center>
+                    </Center>
+                    </Link>
+                 
                 </Box>
               </p>
             </TabPanel>
@@ -372,7 +392,44 @@ const Howitworks = () => {
       </Center>
 
       {/* //////////////////////first slider///////////////////////     */}
-      <Center bg="#183962" height="200px" marginTop="-18px"></Center>
+
+
+      
+      
+      <div style={{width:"98%",height:"400px" ,margin:"auto",backgroundColor:"#183962" ,marginTop:"-20px"}}>
+              <Basicslider/>
+      </div>
+      
+      {/* //////////////////////second slider///////////////////////     */}
+
+         <Gettingslider/>
+         <br></br>
+
+      {/* //////////////////////third slider///////////////////////     */}
+      <Center>
+      <Text
+              as="p"
+              color="#183962"
+              textAlign="center"
+              
+              fontWeight="700"
+              fontFamily="sans-serif"
+              fontSize="2em"
+            >
+              Advice from Successful Members
+            </Text>
+      </Center><br></br>
+      <Adviceslider/>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+
+      <Getstartedonmobile/>
+      <HomeFooter/>
+        
     </>
   );
 };
