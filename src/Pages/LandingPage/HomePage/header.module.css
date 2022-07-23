@@ -120,12 +120,12 @@ margin-top: 2%;
 
 /* //////////////body-blog/////////////////// */
 
-.midtxt{
+.midtxt p{
     margin-top: 5%;
     /* border: 1px solid ; */
     align-items:center;
     text-align:center; 
-    font-size: 1.9vw;
+    font-size: 2.3vw;
     font-weight: 500;
     color:#183962; ;
 }
@@ -139,6 +139,8 @@ margin-top: 2%;
 }
 .flexElement{
     /* border: 1px solid ; */
+    width: 70%;
+    /* margin: auto; */
  
 }
 .flexElement h3{

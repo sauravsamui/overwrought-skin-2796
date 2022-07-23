@@ -22,3 +22,5 @@ export default function Homepage() {
     </div>
   )
 }
+
+// https://lydian-longship-ec7.notion.site/CW-B17-Daily-Submissions-bec88d4eecd641d4b15ad15ee2bec370

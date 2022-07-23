@@ -81,7 +81,7 @@ export default function BodySlider() {
         </Slider>
         
       </div>
-     <button id>Get Weight Loss Tips</button>
+     {/* <button id>Get Weight Loss Tips</button> */}
     </div>
   )
 }
