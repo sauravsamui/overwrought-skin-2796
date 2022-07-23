@@ -1,0 +1,140 @@
+.headerDiv{
+    /* border: 1px solid red; */
+    width: 250px;
+}
+
+.headerImg{
+    width: 250px;
+    cursor: pointer;
+}
+.btnYes{
+    color:white;
+    background-color: #ff9400;
+    cursor: pointer;
+    width: 350px;
+    height: 42px;
+    border-radius: 5px;
+    font-size: 20px;
+    border: none;
+    font-weight: bolder;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.middleDiv{
+    width: 32%;
+    margin: auto;
+    height: 700px;
+    padding: 5px;
+   
+}
+.middleInsideDiv{
+    background-color: whitesmoke;
+    width: 480px;
+   
+    margin: auto;
+    padding: 8px 10px;
+    margin-top: 30px;
+    border-radius: 10px;
+    padding-bottom: 50px;
+
+}
+.arrow{
+    text-align: left;
+    font-weight: 1000;
+    font-size: larger;
+}
+.currentW{
+    color: #173966;
+    font-size: 27px;
+    width: 95%;
+    margin: auto;
+    letter-spacing: 1px;
+    font-weight: bolder; 
+    margin-top: 20px;
+}
+.inputW1,.inputW,.inputW2,.inputW3{
+    border:1px solid rgb(167, 166, 166);
+    transition: box-shadow 300ms ease-out;
+   height: 37px;
+   text-align: center;
+   width: 250px;
+   border-radius: 5px;
+}
+.inputW:focus{
+    outline:none;
+    border: 1px solid aquamarine;
+    box-shadow: 0px 0px 5px aquamarine;
+   
+   
+}
+.inputW,.inputW2{
+    margin-top: 30px;
+}
+.inputW1:focus{
+    outline:none;
+    border: 1px solid aquamarine;
+    box-shadow: 0px 0px 5px aquamarine;
+    text-align: center;
+}
+.inputW1,.inputW3{
+    margin-top: 20px;
+}
+.goalW{
+    color: #173966;
+    font-size: 25px;
+    letter-spacing: 1px;
+    font-weight: bolder; 
+    margin-top: 35px; 
+}
+.selectW{
+    border:1px solid rgb(167, 166, 166);
+    transition: box-shadow 300ms ease-out;
+    width:200px;
+    height: 35px;
+
+}
+.selectW:focus{
+    outline:none;
+    border: 1px solid aquamarine;
+    box-shadow: 0px 0px 5px aquamarine;
+   
+   
+}
+.inputW3:focus{
+    outline:none;
+    border: 1px solid red;
+    box-shadow: 0px 0px 5px red;
+}
+.inputW2:focus{
+    outline:none;
+    border: 1px solid red;
+    box-shadow: 0px 0px 5px red;
+}
+.details{
+   
+    font-size: 14px;
+    width: 70%;
+    margin: auto;
+    margin-top: 30px;
+    text-align: center;
+    font-weight: 450;
+    padding-bottom: 5px;
+    
+}
+
+.TC{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.inputW2,.inputW3{
+    border: 2px solid red;
+}
+.error{
+    color:red;
+    width:250px;
+    font-size:14px;
+    text-align:left;
+    margin:auto
+}
