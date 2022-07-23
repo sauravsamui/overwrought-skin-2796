@@ -1,5 +1,5 @@
 import React from "react";
-import style from "./header.module.css";
+import style from "../../LandingPage/HomePage/header.module.css";
 import Slider from "react-slick";
 
 function SampleNextArrow(props) {
@@ -9,9 +9,10 @@ function SampleNextArrow(props) {
       className={className}
       style={{
         ...style,
-        display: "block",
-        background: "orange",
+        
+        background: "gray",
         borderRadius: "50%",
+
       }}
       onClick={onClick}
     />
@@ -26,7 +27,7 @@ function SamplePrevArrow(props) {
       style={{
         ...style,
         display: "block",
-        backgroundColor: "orange",
+        backgroundColor: "gray",
         borderRadius: "50%",
       }}
       onClick={onClick}
@@ -36,11 +37,11 @@ function SamplePrevArrow(props) {
 
 export default function () {
   const settings2 = {
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 500,
-    slidesToShow: 3,
-    slidesToScroll: 3,
+    slidesToShow: 4,
+    slidesToScroll: 1,
     arrows: true,
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />,
@@ -50,25 +51,22 @@ export default function () {
       <div>
         <div className={style.mainContainer}>
           <h2 style={{ fontWeight: "bold", padding: "1%" }}>
-            A Balanced Approach to Weight Loss
+          Perks & Benefits
           </h2>
-          <p>
-            Get motivated with these nutrition and wellness tips and user
-            success stories!
-          </p>
+          
           <div className={style.slickCont}>
             <Slider {...settings2}>
               <div>
                 <div className={style.slcard}>
                   <div className={style.slimg}>
                     <img
-                      src="https://i1.wp.com/loseitblog.com/wp-content/uploads/2019/09/Untitled-design-119.png?w=1010&ssl=1"
+                      src="https://assets.loseit.com/2020/flexible-hours.png"
                       alt="1"
                     />
                   </div>
                   <div className={style.sltxt}>
                     <p>
-                      Setting Macronutrient Goals: How Many Macros do You Need?
+                    Flexible Hours
                     </p>
                   </div>
                 </div>
@@ -78,12 +76,12 @@ export default function () {
                 <div className={style.slcard}>
                   <div className={style.slimg}>
                     <img
-                      src="https://i2.wp.com/loseitblog.com/wp-content/uploads/2019/02/Quick-tips-to-make-healthier-choices.png?w=1010&ssl=1"
+                      src="https://assets.loseit.com/2020/wellness.png"
                       alt="2"
                     />
                   </div>
                   <div className={style.sltxt}>
-                    <p>Quick Tips to Make Healthier Decisions</p>
+                    <p>Wellness Reimbursement</p>
                   </div>
                 </div>
               </div>
@@ -92,12 +90,12 @@ export default function () {
                 <div className={style.slcard}>
                   <div className={style.slimg}>
                     <img
-                      src="https://i1.wp.com/loseitblog.com/wp-content/uploads/2019/09/Untitled-design-132.png?w=1010&ssl=1"
+                      src="https://assets.loseit.com/2020/annual-retreat.png"
                       alt="3"
                     />
                   </div>
                   <div className={style.sltxt}>
-                    <p>12 Protein-Packed Snacks to Curb Hanger Quick</p>
+                    <p>Annual Company Retreat</p>
                   </div>
                 </div>
               </div>
@@ -105,12 +103,12 @@ export default function () {
                 <div className={style.slcard}>
                   <div className={style.slimg}>
                     <img
-                      src="https://i0.wp.com/loseitblog.com/wp-content/uploads/2019/01/health-benefits-of-seltzer-water.png?w=1010&ssl=1"
+                      src="https://assets.loseit.com/2020/vacation.png"
                       alt="4"
                     />
                   </div>
                   <div className={style.sltxt}>
-                    <p>Is Drinking Seltzer Actually Healthy?</p>
+                    <p>Open Vacation Policy</p>
                   </div>
                 </div>
               </div>
@@ -118,12 +116,12 @@ export default function () {
                 <div className={style.slcard}>
                   <div className={style.slimg}>
                     <img
-                      src="https://i2.wp.com/loseitblog.com/wp-content/uploads/2019/09/Untitled-design-135.png?w=1010&ssl=1"
+                      src="https://assets.loseit.com/2020/profit-sharing.png"
                       alt="5"
                     />
                   </div>
                   <div className={style.sltxt}>
-                    <p>Fun 20-Minute Treadmill Workouts</p>
+                    <p>Profit Sharing</p>
                   </div>
                 </div>
               </div>
@@ -131,12 +129,12 @@ export default function () {
                 <div className={style.slcard}>
                   <div className={style.slimg}>
                     <img
-                      src="https://i1.wp.com/loseitblog.com/wp-content/uploads/2019/01/Seven-benefits-of-sleep.png?w=1010&ssl=1"
+                      src="https://assets.loseit.com/2020/health-dental-vision.png"
                       alt="6"
                     />
                   </div>
                   <div className={style.sltxt}>
-                    <p>Seven Strategies for a Better Nights Sleep</p>
+                    <p>Health ,Dental,Vision</p>
                   </div>
                 </div>
               </div>
@@ -144,13 +142,9 @@ export default function () {
           </div>
         </div>
       </div>
-      <div>
-        <button className={style.button1}>Get Weight Loss Tips</button>
-      </div>
+     
 
       
     </div>
   );
 }
-
-// import style from "../../LandingPage/HomePage/header.module.css";
