@@ -207,7 +207,7 @@ export default function Upper() {
               }}
             >
               Small team, deep and interesting challenges:
-            </span>{" "}
+            </span>
             We may be a small team (under 50 people total), but we're always
             pushing each other to be better at what we do. Sometimes that means
             wearing different hats and learning new skills to get things done.
@@ -265,13 +265,13 @@ export default function Upper() {
         <br />
         <br />
         {/* #183962 */}
-        <div className={style.giftdiv} style={{  width:"100%", fontSize:"smaller", margin:"auto", backgroundColor:"#183962", padding:"7%" }}>
+        <div className={style.giftdiv} style={{  width:"100%", fontSize:"smaller", margin:"auto", backgroundColor:"#183962", padding:"7%",height:"340px" }}>
         <div style={{display: "flex", alignItems: "center"}}>
           <div className={style.gift} style={{width:"30%"}}>
             <img style={{marginLeft:"auto"}} src="https://s3.amazonaws.com/assets.loseit.com/website/diversity_inclusion/DandI_Statement.png" />
           </div>
           <div style={{width:"45%" , marginLeft:"1%", color:"white"}}>
-            <h3>Diversity, Equity, & Inclusion</h3>
+            <p style={{fontSize:"20px",fontWeight:"bold"}}>Diversity, Equity, & Inclusion</p>
             <p>
               Lose It!! is committed to creating a diverse and inclusive
               environment where employees can thrive. An important goal of our
