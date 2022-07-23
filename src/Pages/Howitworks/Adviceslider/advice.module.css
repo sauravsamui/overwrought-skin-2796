@@ -1,0 +1,24 @@
+.slider{
+    /* border: 1px solid  ; */
+    margin: auto;
+}
+.feature{
+ width: 50%;
+ margin: auto;
+ height:400px;
+
+background-color: #f1f1f1;
+border-radius: 10px;
+}
+
+.imgdiv{
+    width: 150px;
+    margin: auto;
+}
+.divtxt{
+    width: 80%;
+    text-align: center;
+    margin: auto;
+    color: black;
+    margin-top:30px;
+}

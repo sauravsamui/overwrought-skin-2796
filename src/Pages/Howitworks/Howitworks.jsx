@@ -1,8 +1,12 @@
 import React from 'react';
-import weightloss from '../assets/weightloss.jpg';
+import weightloss from '../../assets/weightloss.jpg';
 import whylossit from '../assets/whylossit.jpg';
-import basic from '../assets/basic.jpg';
-import premium from '../assets/premium.jpg';
+import basic from '../../assets/basic.jpg';
+import premium from '../../assets/premium.jpg';
+import Gettingslider from './Gettingslider/Gettingslider';
+import Adviceslider from './Adviceslider/Adviceslider';
+import Basicslider from './Basicslider/Basicslider';
+import Getstartedonmobile from './Getstartedonmobile';
 
 import {
   Box,
@@ -32,6 +36,8 @@ import {
   Tab,
   TabPanel,
 } from '@chakra-ui/react';
+
+
 
 const Howitworks = () => {
   return (
@@ -372,7 +378,43 @@ const Howitworks = () => {
       </Center>
 
       {/* //////////////////////first slider///////////////////////     */}
-      <Center bg="#183962" height="200px" marginTop="-18px"></Center>
+
+
+      
+      
+      <div style={{width:"98%",height:"400px" ,margin:"auto",backgroundColor:"#183962" ,marginTop:"-20px"}}>
+              <Basicslider/>
+      </div>
+      
+      {/* //////////////////////second slider///////////////////////     */}
+
+         <Gettingslider/>
+         <br></br>
+
+      {/* //////////////////////third slider///////////////////////     */}
+      <Center>
+      <Text
+              as="p"
+              color="#183962"
+              textAlign="center"
+              
+              fontWeight="700"
+              fontFamily="sans-serif"
+              fontSize="2em"
+            >
+              Advice from Successful Members
+            </Text>
+      </Center><br></br>
+      <Adviceslider/>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+
+      <Getstartedonmobile/>
+        
     </>
   );
 };

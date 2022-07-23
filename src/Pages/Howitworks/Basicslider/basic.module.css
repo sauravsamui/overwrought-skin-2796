@@ -1,0 +1,31 @@
+
+/* ----------------slick lower------------ */
+.slickCont{
+    width: 50%;
+    margin: auto;
+}
+.mainContainer{
+    padding: 1%;
+}
+.slcard{
+    padding:8%;
+    font-size: 0.7em;
+}
+.pa{
+    color:"red";
+}
+.sltext{
+    text-align: center;
+    color: #183962;
+    font-size: 16px;
+}
+
+
+
+.slimage{
+ margin-top: 100px;
+ width: 100%;
+ height: 200px;
+ margin: auto;
+
+}
