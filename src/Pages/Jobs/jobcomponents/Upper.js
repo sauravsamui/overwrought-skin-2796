@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import style from "./job.module.css";
 
 export default function Upper() {
@@ -7,16 +8,19 @@ export default function Upper() {
       <div className={style.headerOne}>
         <div style={{ display: "flex", justifyContent: "space-between" }}>
           <div style={{ marginLeft: "-6%" }}>
-            <a href="/">
-              <img
+           <Link to={"/"}>
+           <img
                 src="https://assets.loseit.com/website/corporate/LoseIt_Logo_FullColor+(1).svg"
                 alt="Lose It! logo"
                 style={{ width: "59%" }}
               ></img>
-            </a>
+           </Link>
           </div>
           <div style={{ marginTop: "2%" }}>
+            <Link to={"/login"}>
             <button className={style.loginButton}>Login</button>
+            </Link>
+           
           </div>
         </div>
       </div>
