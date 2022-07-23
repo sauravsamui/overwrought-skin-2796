@@ -6,7 +6,7 @@ import Upper from './jobcomponents/Upper';
 import './jobcomponents/job.module.css'
 import JobSlider from './jobcomponents/JobSlider';
 import HomeFooter from '../LandingPage/HomePage/HomeFooter';
-
+import Getstartedonmobile from '../Howitworks/Getstartedonmobile.jsx'
 
 
 
@@ -18,6 +18,7 @@ export default function Jobs() {
     <Middle/>
     <Jobfooter/>
     <JobSlider/>
+    <Getstartedonmobile />
     <HomeFooter />
     
     

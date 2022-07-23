@@ -50,7 +50,7 @@ export default function () {
     <div>
       <div>
         <div className={style.mainContainer}>
-          <h2 style={{ fontWeight: "bold", padding: "1%" }}>
+          <h2 style={{ fontWeight: "bold", padding: "1%", fontSize:"30px" ,color:"rgb(19, 59, 103)"}}>
           Perks & Benefits
           </h2>
           
