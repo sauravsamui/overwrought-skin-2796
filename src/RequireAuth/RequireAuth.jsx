@@ -8,7 +8,7 @@ const RequireAuth = ({children}) => {
   if(isAuth){
     return (children)
   }else{
-    return(<Navigate to={"/login"}/>)
+    return(<Navigate to={"/"}/>)
   }
    
   

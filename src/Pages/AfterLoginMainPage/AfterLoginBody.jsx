@@ -14,6 +14,7 @@ import { MdOutlineArrowDownward } from "react-icons/md";
 import { Calendar } from "antd";
 import { Link } from "react-router-dom";
 import Comments from "./commentMapDiv/Comments";
+import AfterLoginMainPageNavbar from "../../component/Navbar/AfterLoginMainPageNavbar";
 const AfterLoginBody = () => {
   const [showDropdown, setShowDropdown] = useState(false);
   const [SearchData, SetSearchData] = useState([]);
@@ -133,6 +134,8 @@ const AfterLoginBody = () => {
     getAddedData1();
   }, []);
   return (
+    <>
+    <AfterLoginMainPageNavbar/>
     <div className={style.MainBody}>
       <div className={style.leftBody}>
         <div className={style.LeftBody_SelectSetion}>
@@ -505,6 +508,7 @@ const AfterLoginBody = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 

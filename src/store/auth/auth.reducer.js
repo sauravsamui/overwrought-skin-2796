@@ -48,7 +48,7 @@ export const authReducer =(state=initialState,{type,payload})=>{
             }
             else{
                 state.isAuth=false;
-              state.login.sucess=true; 
+              state.login.wrongCred=true; 
             }
             return {...state,login:{
                 ...state.login,loading:false,error:false
@@ -56,7 +56,7 @@ export const authReducer =(state=initialState,{type,payload})=>{
         }
         case LOGIN_ERROR:{
             return {...state,login:{
-                ...state.login,loading:false,error:true,wrongCred:false
+                ...state.login,loading:false,error:true,wrongCred:true
              },isAuth:false}
         }
        case LOGOUT:{

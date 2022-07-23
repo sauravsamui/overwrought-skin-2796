@@ -82,7 +82,7 @@ let handleContinue=()=>{
 
 useEffect(() => {
   if(isAuth){
-    navigate("/");
+    navigate("/home");
   }
 
   return () => {

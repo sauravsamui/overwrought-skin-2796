@@ -1,12 +1,12 @@
 import React from 'react'
 import style from './basic.module.css'
 import Slider from "react-slick";
-import soft from '../assets/soft.jpg'
-import personilised from '../assets/personilised.jpg'
-import advice from '../assets/advice.jpg'
-import intrutive from '../assets/intrutive.jpg'
-import pattern from '../assets/pattern.jpg'
-import watch from '../assets/watch.jpg'
+import soft from "../../../assets/soft.jpg";
+import personilised from '../../../assets/personilised.jpg'
+import advice from '../../../assets/advice.jpg'
+import intrutive from '../../../assets/intrutive.jpg'
+import pattern from '../../../assets/pattern.jpg'
+import watch from '../../../assets/watch.jpg'
 
 
 function SampleNextArrow(props) {

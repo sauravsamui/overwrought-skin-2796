@@ -68,7 +68,7 @@ let handleSubmit =()=>{
 
 React.useEffect(() => {
   if(isAuth){
-    navigate("/");
+    navigate("/home");
   }
 
   return () => {

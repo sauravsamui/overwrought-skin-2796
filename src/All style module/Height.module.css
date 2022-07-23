@@ -36,6 +36,8 @@
     transition: box-shadow 300ms ease-out;
    height: 35px;
    text-align: center;
+   width: 200px;
+   font-size: medium;
 }
 .inputW:focus{
     outline:none;
@@ -53,6 +55,7 @@
     width:200px;
     height: 35px;
     margin-top: 20px;
+    font-size: medium;
 }
 .selectW:focus{
     outline:none;

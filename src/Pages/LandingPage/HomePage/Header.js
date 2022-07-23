@@ -1,7 +1,7 @@
 import { MenuButton } from "@chakra-ui/react";
 import React from "react";
 import style from  "./header.module.css";
-
+import {Link} from "react-router-dom";
 export default function Header() {
   return (
     <div className={style.landingHeader}>
@@ -27,19 +27,20 @@ export default function Header() {
           <div style={{ marginLeft: "-6%" }}>
             <a href="/">
               <img
-                src="https://assets.loseit.com/website/corporate/LoseIt_Logo_FullColor+(1).svg"
+                src="https://assets.loseit.com/website/corporate/LoseIt_Logo_NoTagline_FullColor.svg"
                 alt="Lose It! logo"
                 style={{ width: "59%" }}
               ></img>
             </a>
           </div>
           <div  style={{ marginTop: "2%" }}>
-            <button
+            <Link to={"/login"}><button
               className={style.loginButton}
               
             >
               Login
-            </button>
+            </button></Link>
+            
           </div>
         </div>
       </div>
@@ -55,7 +56,8 @@ export default function Header() {
             <h1>Top Rated</h1>
             <h1>Weight Loss Plan</h1>
             <p>Track the foods you love and lose weight</p>
-            <button>Sign Up for Free</button>
+            <Link to={"/question"}><button>Sign Up for Free</button></Link>
+            
             <div className="h2-2-flex" style={{ display: "flex" }}>
               <div className={style.apple} >
               <i class="fab fa-apple"></i>

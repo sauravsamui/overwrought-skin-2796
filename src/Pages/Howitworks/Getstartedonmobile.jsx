@@ -9,6 +9,7 @@ import {
   Image,
 } from '@chakra-ui/react';
 
+
 const Getstartedonmobile = () => {
   return (
     <div>
@@ -36,21 +37,25 @@ const Getstartedonmobile = () => {
             
           <Flex gap="30px">
             {/* appleimage */}
-            <Image
+            <a href="https://apps.apple.com/app/lose-it/id297368629" target="_blank">
+            <Image cursor={"pointer"}
               w="205px"
               src={'https://assets.loseit.com/website/home/Download_Apple.svg'}
               alt="some good alt text"
               objectFit="contain"
             />
+            </a>
             {/* //  playstoreimage */}
-            <Image
+            <a href='https://play.google.com/store/apps/details?id=com.fitnow.loseit&' target={"_blank"}><Image
               w="205px"
+              cursor={"pointer"}
               src={
                 'https://assets.loseit.com/website/home/Download_GooglePlay.svg'
               }
               alt="some good alt text"
               objectFit="contain"
             />
+            </a>
           </Flex>
         </Box>
       </Center>
