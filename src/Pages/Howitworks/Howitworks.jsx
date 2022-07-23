@@ -1,10 +1,12 @@
 import React from 'react';
-import weightloss from '../assets/weightloss.jpg';
+import weightloss from '../../assets/weightloss.jpg';
 import whylossit from '../assets/whylossit.jpg';
-import basic from '../assets/basic.jpg';
-import premium from '../assets/premium.jpg';
-import Gettingslider from './Gettingslider';
-import Adviceslider from './Adviceslider';
+import basic from '../../assets/basic.jpg';
+import premium from '../../assets/premium.jpg';
+import Gettingslider from './Gettingslider/Gettingslider';
+import Adviceslider from './Adviceslider/Adviceslider';
+import Basicslider from './Basicslider/Basicslider';
+import Getstartedonmobile from './Getstartedonmobile';
 
 import {
   Box,
@@ -34,8 +36,7 @@ import {
   Tab,
   TabPanel,
 } from '@chakra-ui/react';
-import Basicslider from './Basicslider';
-import Getstartedonmobile from './Getstartedonmobile';
+
 
 
 const Howitworks = () => {
