@@ -19,8 +19,8 @@ import Community from "./Pages/AfterLoginMainPage/Community";
 function App() {
   return (
     <div className="App">
-      <Community />
       <AfterLoginBody />
+      <Community />
     </div>
   );
 }
