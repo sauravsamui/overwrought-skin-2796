@@ -4,7 +4,7 @@ import {useDispatch, useSelector} from "react-redux";
 import { Link,useNavigate } from 'react-router-dom'
 import styles from "../../All style module/Signup.module.css";
 import { signupApi } from '../../store/auth/auth.action';
-import { CircularProgress } from '@chakra-ui/react'
+import { Spinner } from '@chakra-ui/react'
 
 const Signup = () => {
     const nameRef=  useRef(null);
@@ -107,7 +107,13 @@ useEffect(() => {
      {loading &&
   
   <div>
-    <CircularProgress value={59} size='80px' thickness='6px' />
+   <Spinner
+  thickness='6px'
+  speed='0.65s'
+  emptyColor='gray.200'
+  color='blue.500'
+  size='xl'
+/>
   </div>
 
 }

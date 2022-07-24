@@ -58,27 +58,7 @@ export default function Header() {
             <p>Track the foods you love and lose weight</p>
             <Link to={"/question"}><button>Sign Up for Free</button></Link>
             
-            <div className="h2-2-flex" style={{ display: "flex" }}>
-              <div className={style.apple} >
-              <i class="fab fa-apple"></i>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star"></span>
-              </div>
-              <div className={style.android}>
-              <a href="/get/android" aria-label="Download Lose It! app from Play Store">
-                        <i class="fab fa-android"></i>
-                        <i class="checked fa fa-star"></i>
-                        <i class="checked fa fa-star"></i>
-                        <i class="checked fa fa-star"></i>
-                        <i class="checked fa fa-star"></i>
-                        <i class="star fa fa-star android"></i>
-                    </a>
-              </div>
-
-            </div>
+           
           </div>
         </div>
       </div>

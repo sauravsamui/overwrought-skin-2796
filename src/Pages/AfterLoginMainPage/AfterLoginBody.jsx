@@ -13,10 +13,13 @@ import { MdOutlineArrowDownward } from "react-icons/md";
 import { Link } from "react-router-dom";
 import Comments from "./commentMapDiv/Comments";
 import AfterLoginMainPageNavbar from "../../component/Navbar/AfterLoginMainPageNavbar";
+let date = new Date();
+let d = `${date.getFullYear()}-${+(date.getMonth())+1<10?"0"+(+date.getMonth()+1):+date.getMonth()+1}-${date.getDate()}`
+console.log(d);
 const AfterLoginBody = () => {
   const [showDropdown, setShowDropdown] = useState(false);
   const [SearchData, SetSearchData] = useState([]);
-
+  console.log(d);
   const [comment, setComment] = useState([]);
   const [commentText, setCommentText] = useState("");
 
@@ -365,9 +368,8 @@ const AfterLoginBody = () => {
             type="date"
             id="start"
             name="trip-start"
-            value="2018-07-22"
-            min="2018-01-01"
-            max="2018-12-31"
+            value={d}
+           
           />
         </div>
 
