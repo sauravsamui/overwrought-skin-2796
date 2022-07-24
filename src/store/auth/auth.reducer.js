@@ -25,7 +25,7 @@ export const authReducer =(state=initialState,{type,payload})=>{
             }}
         }
         case SIGNUP_SUCCESS:{
-            localStorage.setItem("signupAuth",JSON.stringify(payload));
+            localStorage.setItem("signupAuth",JSON.stringify(payload.username));
             return {...state,signup:{
                 ...state.signup,loading:false,error:false,sucess:true
             },isAuth:true}
@@ -42,7 +42,7 @@ export const authReducer =(state=initialState,{type,payload})=>{
         }
         case LOGIN_SUCCESS:{
             if(payload.payload){
-              localStorage.setItem("loginAuth",JSON.stringify(payload.payload));
+              localStorage.setItem("loginAuth",JSON.stringify(payload.payload.username));
               state.isAuth=true;
               state.login.wrongCred=false;
             }
@@ -60,8 +60,7 @@ export const authReducer =(state=initialState,{type,payload})=>{
              },isAuth:false}
         }
        case LOGOUT:{
-           localStorage.removeItem("signupAuth");
-           localStorage.removeItem("loginAuth")
+         localStorage.removeItem("signupAuth") || localStorage.removeItem("loginAuth")
            return {...state,signup:{
             ...state.signup,sucess:false},login:{
                 ...state.login,wrongCred:false

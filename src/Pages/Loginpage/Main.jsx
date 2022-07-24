@@ -1,8 +1,6 @@
 import {
   Box,
   Button,
-  Checkbox,
-  CircularProgress,
   Container,
   Divider,
   FormControl,
@@ -10,6 +8,7 @@ import {
   Heading,
   HStack,
   Input,
+  Spinner,
   Stack,
   Text,
   useBreakpointValue,
@@ -101,7 +100,13 @@ return(
     {loading &&
   
   <div>
-    <CircularProgress value={59} size='80px' thickness='6px' />
+    <Spinner
+  thickness='6px'
+  speed='0.65s'
+  emptyColor='gray.200'
+  color='blue.500'
+  size='xl'
+/>
   </div>
 
 }

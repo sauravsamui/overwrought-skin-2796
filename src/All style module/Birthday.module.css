@@ -81,7 +81,8 @@
     border-radius: 5px;
     background-color: transparent;
     margin-top: 20px;
-    
+    font-size: medium;
+   
 }
 .inputDate:focus{
     outline: none;

@@ -2,14 +2,13 @@ import React from "react";
 import styles from "../../All style module/AfterLoginMainPageNavbar.module.css";
 import { Link } from "react-router-dom";
 import { IoMdSettings } from "react-icons/io";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import { logout } from '../../store/auth/auth.action';
 
 // AiOutlineSetting;
-let loginAuth= JSON.parse(localStorage.getItem("loginAuth"))|| ""
-let signupAuth= JSON.parse(localStorage.getItem("signupAuth"))||""
+let Auth= JSON.parse(localStorage.getItem("loginAuth"))||JSON.parse(localStorage.getItem("signupAuth"))||""
+
 const AfterLoginMainPageNavbar = () => {
-  const {isAuth} = useSelector((state)=>state.auth)
   const dispatch = useDispatch()
   return (
     <div className={styles.navbar}>
@@ -36,7 +35,7 @@ const AfterLoginMainPageNavbar = () => {
       </div>
 
       <div className={`${styles.navbar_left} ${styles.navbar_right_links}`}>
-        <Link to="">{loginAuth.username?loginAuth.username:signupAuth.username}</Link>
+        <Link to="">{Auth}</Link>
         <span>|</span>
 
         <Link to="">Upgrade</Link>
