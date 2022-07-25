@@ -15,23 +15,18 @@ import Comments from "./commentMapDiv/Comments";
 import AfterLoginMainPageNavbar from "../../component/Navbar/AfterLoginMainPageNavbar";
 let date = new Date();
 let d = `${date.getFullYear()}-${+(date.getMonth())+1<10?"0"+(+date.getMonth()+1):+date.getMonth()+1}-${date.getDate()}`
-console.log(d);
+
 const AfterLoginBody = () => {
   const [showDropdown, setShowDropdown] = useState(false);
   const [SearchData, SetSearchData] = useState([]);
-  console.log(d);
   const [comment, setComment] = useState([]);
   const [commentText, setCommentText] = useState("");
 
   const [SearchDropdownBreak, setSearchDropdownBreak] = useState(false);
   const [SearchDropdownlunch, setSearchDropdownlunch] = useState(false);
   const [breakFast, setbreakfast] = useState([]);
-  const [commentOpen, setCommentOpen] = useState(false);
   const [lunchh, setlunch] = useState([]);
-  const [dinnerr, setdinner] = useState([]);
-  const onPanelChange = (value, mode) => {
-    console.log(value.format("YYYY-MM-DD"), mode);
-  };
+
 
   const [selectDrop, setSelectDrop] = useState(false);
   const hanldeDropOpen = () => {
