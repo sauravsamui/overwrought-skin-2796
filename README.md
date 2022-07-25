@@ -1,70 +1,95 @@
-# Getting Started with Create React App
+# Lose it! - Clone
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This collaborative project is a clone of the [Lose it!](https://www.loseit.com/) website. We as a team of 4 members cloned this website during our construct week project in Masai School, Bangalore.
 
-## Available Scripts
+Lose It! is a calorie counter & food diary diet website/App that helps you stick to your diet and achieve weight loss that fits! 
 
-In the project directory, you can run:
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Deployed Site
 
-### `npm test`
+[Lose it! - Clone](https://loseit-clone.netlify.app/)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Features
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Landing Page
+- Calories counting page
+- Login / Sign-Up page with user authentication.
+- Job Portal Page with react-slick slider fuctionality. 
+- How it works page using chakra ui and react-slick slider functionality.
+- After user Login page with Navbar
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Tech Stack
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- CSS | React | Redux | Node.js | Mongodb 
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Libraries Used 
 
-## Learn More
+- Chakra UI
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+## Contributors
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- [@sauravsamui](https://github.com/sauravsamui)
+- [@iYogeshkumar](https://github.com/iYogeshkumar)
+- [@Anujsharma51](https://github.com/Anujsharma51)
+- [@Debasree-3031999](https://github.com/Debasree-3031999)
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
+## Website Sneak Peeks
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### Sneak Peeks on Large Devices
 
-### Deployment
+- **Langing Page**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+![Screenshot (197)](https://user-images.githubusercontent.com/99754518/180775345-37cbe71a-bd3d-49b1-8d7c-12ea5808b5a7.png)
 
-### `npm run build` fails to minify
+![Screenshot (198)](https://user-images.githubusercontent.com/99754518/180775428-a5cf6f6e-b57a-49cb-8cb0-6ff3eb54b0d8.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+-Calories Counting
+
+![Screenshot (205)](https://user-images.githubusercontent.com/99754518/180775999-ed7ccf4f-6b02-41d8-95cb-e3ed7cf904c4.png)
+
+![Screenshot (207)](https://user-images.githubusercontent.com/99754518/180776086-abe8d680-99f8-407d-a007-93c289f04a70.png)
+
+![Screenshot (210)](https://user-images.githubusercontent.com/99754518/180776800-9a3b8d48-c2e2-4468-8514-addf38eba7cb.png)
+
+- **Sign-up Page**
+
+![Screenshot (211)](https://user-images.githubusercontent.com/99754518/180776950-5d406125-c1aa-4012-8e99-eb79a2c1b87e.png)
+
+- **Login Page**
+
+![Screenshot (213)](https://user-images.githubusercontent.com/99754518/180777885-1582bd29-f7dc-43b4-8fc0-a6729dd3f4d0.png)
+
+- ** Job Portal Page**
+
+![Screenshot (200)](https://user-images.githubusercontent.com/99754518/180778228-9d99a32c-35fa-49ff-ae08-b679f12912d6.png)
+
+![Screenshot (201)](https://user-images.githubusercontent.com/99754518/180778250-eb843e82-8030-44e0-9571-378317cae0d7.png)
+
+- **How it works Page**
+
+![Screenshot (204)](https://user-images.githubusercontent.com/99754518/180778471-e58f83ed-3a3f-49ae-9df3-9f97147a289c.png)
+
+![Screenshot (203)](https://user-images.githubusercontent.com/99754518/180778500-318fc465-a8fc-4f2c-9d68-ac46bc51f354.png)
+
+- **After login Page**
+
+![Screenshot (214)](https://user-images.githubusercontent.com/99754518/180779045-45080442-447e-4b52-b554-36344e737462.png)
+
+![Screenshot (215)](https://user-images.githubusercontent.com/99754518/180779351-89b479d6-4f66-4b2d-b706-56a076ad2f1e.png)
+
+
+
+
