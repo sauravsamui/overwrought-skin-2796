@@ -9,11 +9,14 @@ import { LOGIN_ERROR, LOGIN_LOADING, LOGIN_SUCCESS, LOGOUT, SIGNUP_ERROR, SIGNUP
 
 
 export const signupApi = (value)=>(dispatch)=>{
+   let u = value.username
      dispatch({type:SIGNUP_LOADING,})
      axios.post("https://enigmatic-woodland-19583.herokuapp.com/auth/signup",{
         ...value
      })
-     .then((res)=>dispatch({type:SIGNUP_SUCCESS,payload:value}))
+     .then((res)=>{localStorage.setItem("signupAuth",u)
+      dispatch({type:SIGNUP_SUCCESS,payload:value});
+   })
      .catch((err)=>dispatch({type:SIGNUP_ERROR}))
 }
 

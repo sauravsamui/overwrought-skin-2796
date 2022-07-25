@@ -25,7 +25,6 @@ export const authReducer =(state=initialState,{type,payload})=>{
             }}
         }
         case SIGNUP_SUCCESS:{
-            localStorage.setItem("signupAuth",JSON.stringify(payload.username));
             return {...state,signup:{
                 ...state.signup,loading:false,error:false,sucess:true
             },isAuth:true}
@@ -42,7 +41,7 @@ export const authReducer =(state=initialState,{type,payload})=>{
         }
         case LOGIN_SUCCESS:{
             if(payload.payload){
-              localStorage.setItem("loginAuth",JSON.stringify(payload.payload.username));
+              localStorage.setItem("loginAuth",payload.payload.username);
               state.isAuth=true;
               state.login.wrongCred=false;
             }

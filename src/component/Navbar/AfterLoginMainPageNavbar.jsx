@@ -6,10 +6,11 @@ import { useDispatch } from "react-redux";
 import { logout } from '../../store/auth/auth.action';
 
 // AiOutlineSetting;
-let Auth= JSON.parse(localStorage.getItem("loginAuth"))||JSON.parse(localStorage.getItem("signupAuth"))||""
+
 
 const AfterLoginMainPageNavbar = () => {
   const dispatch = useDispatch()
+  let Auth= localStorage.getItem("loginAuth")||localStorage.getItem("signupAuth")||""
   return (
     <div className={styles.navbar}>
       <div className={`${styles.navbar_left}`}>
@@ -35,7 +36,7 @@ const AfterLoginMainPageNavbar = () => {
       </div>
 
       <div className={`${styles.navbar_left} ${styles.navbar_right_links}`}>
-        <Link to="">{Auth}</Link>
+        <Link to=""><button>{Auth}</button></Link>
         <span>|</span>
 
         <Link to="">Upgrade</Link>
